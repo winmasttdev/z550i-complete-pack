@@ -1,0 +1,324 @@
+v1.5.1.1 11/05/2012
+- Improved Search speed, now is up to 2x faster;
+- Improved Offest jump porting;
+- Improved speed for branch detection and comparison;
+- Improved detection of unicode strings pattern, now the pattern lenght is same as text;
+- Improved "Include Creator" tool, added option to output a ASM file.
+- Fixed get wrong address to port;
+- Fixed db32xx porting;
+
+v1.5.1.0 31/10/2011
+- Improved Search speed, now is next to 4 times faster;
+- Added option to generate a ASM file on tab "Include Creator";
+- Improved calls listing, now ARM instructions are showed in results;
+- Added option to load any kind of file as FW, this option able to explore any ARM FW;
+- Fixed wrong conversion when paste IDA copied code in manual search;
+- Fixed "Patch" bytes on automatic search;
+
+v1.5.0.9 17/09/2011
+- Improved Lib comparator functions, now when click apply not ported functions is added to your LIB;
+- Improved ASM cleaner:
+  - Offsets like "dw off_yyyyyyyy" is changed to "dw 0xyyyyyyyy";
+  - Add ":" to all "loc_yyyyyyyy";
+  - Add "+1" for odd "dw 0xyyyyyyyy";
+  - Remove almost unused things;
+- Changed way how Function names are updated on 'Lib.ini', now commented functions will be added;
+- Changed default "2x DCD 0xFF" option, now NOP is default like db32xx FW;
+- Small improvements;
+- Fixed bug in search calls function, some calls didn't appear;
+- Fixed bug in manual search, sometimes the hotkey was executed twice;
+- Fixed bug in inputbox when press enter key between 2 words, now Enter key could be pressed anywhere;
+- Fixed bug in bytes reverser, now reversed bytes is copied to clipboard;
+
+v1.5.0.8 20/08/2011
+- Improved CheckLib functionality, when click on "apply" button your current LIB is added a ".bak", Changed Layout;
+- Improved search accuracy, now is around 90%;
+- Improved ASM cleaner:
+  - Added option to change two DCD 0xFF instruction between 'Aling 4' or 'NOP' instruction;
+  - Improved auto remove unused bytes between two Unicode strings;
+- Added progress on manual search;
+- Added pop-up menu when right click on search list;
+- Added Hotkey function for Pattern Search, F6-Search calls, F7-Search References;
+- Changed minimum value for validation settings, previous 50%, current 70%;
+Fixes:
+- Fixed branch porting when compare the ported offset;
+- Fixed crash when input IDA code with MOVS instruction on manual search;
+- Fixed LIB patch load, now base is not removed;
+- Fixed wrong pattern build on automatic and manual search;
+- Fixed wrong number of ported offsets;
+- Fixed bugs on ASM cleaner;
+- Fixed bug when write saved result to log, now only file name are written;
+- Fixed bug with max number of lng files, now is 8;
+- Fixed bugs on comparator method;
+- Fixed Bugs on LIB load, CheckLib and other related functions don't crash anymore;
+
+v1.5.0.7 01/07/2011
+- Added Toolbar icon to Compiler, stay disabled until select Target FW;
+- Changed Tools button icon, previous is used by Compiler button;
+- Added compiler status;
+- Added beta ASM cleaner;
+- Fixed small bugs;
+- Fixed wrong hook bytes on Compiler;
+- Improved auto insert comments features;
+- Small cosmetic changes;
+
+v1.5.0.6 26/06/2011
+- Fixed possible bug when click on stop button;
+- Improved search, now results is added in real time;
+- Added functions on ASM compiler:
+ - If code32/code16 is not specify on ASM code16 is added automatically;
+ - Auto Insert comments, comments is added to the VKP when compile the ASM, example:
+	;{
+	;This is the comment
+	;another comment
+	;}
+	include "x.inc"
+	...
+
+v1.5.0.5 26/05/2011
+- Fixed save patch after use "Base Change"
+- Added Hotkey function for Pattern Search, F2-Copy FUBU, F3-Copy FULL address, F4-Copy Patch address,
+F5-Copy Bytes/Text in clipboard;
+
+
+v1.5.0.4 09/05/2011
+- Fixed wrong offset length for 'Add Base' function;
+- Fixed wrong port using 'move' bytes;
+- Fixed bug when read FW details causing crash;
+- Fixed bug when get LIB name on beginning of port causing crash;
+- Fixed possible bug on older Windows versions when try use progress in taskbar function;
+- Fixed bug on ASM compiler when use 2 files;
+- Added modified version of file 'x.inc' by den_po;
+- Updated FasmARM compiler, added den_po's patch to compiler;
+- Small or invisible improvements;
+
+v1.5.0.3 03/04/2011
+- Added port commented offsets;
+- Fixed crash when finish porting;
+- Fixed crash when cancel porting;
+- Fixed bad 'branch' porting;
+- Fixed 'Add Base' on 'Base Change' tab, forgot add a '+' before the base;
+- Improved verification, now recognize shortcuts;
+- Small or invisible inprovments.
+
+v1.5.0.2 01/04/2011
+- Fixed bad functionality on 'Base Changer' tab;
+- Added change Base from commented lines;
+- Added DB32xx support for ASM compiler;
+
+Beginning of 'PureBasic' Development
+v1.5.0.1 28/03/2011
+News!
+- Added Pattern search function, pattern is searched on Destination FW;
+- Added color Picker in "Calc" tab;
+- Added branch check to validation system;
+- Added new UI by crazysharath;
+- Added Windows Vista/Seven progress in taskbar button function;
+- Added spell of local language, thanks to Legas; Before: Portuguese | After: Português.
+- Added full Unicode support;
+- Added FasmARM compiler;
+- Automatic protection of the last editor of the patch, (e,p) to (e);
+Improvements:
+- Improved external DLL usage, DLL is not required to run! Now is just download and execute;
+- Improved startup speed;
+- Improved FW identification speed;
+- Improved FW information; Internal usage only
+- Improved "Default LIB Folder" selection;
+- Improved speed on closer offsets;
+Bug fixes:
+- Fixed patch load;
+- Fixed FW auto select after patch load, now supported formats 'Kxxx_Rxxxxxx', 'Kxxx Rxxxxxx' and 'Kxxx SW-Rxxxxxx';
+- Fixed bug when port from patches with base;
+- Fixed function "Include Creator";
+- Fixed "New Offset" information, now it is displayed with base;
+   Before: 2001154 | After: 12001154 with +10000000 base.
+
+Finished VB6 Development
+V1.1.16 10/09/2010
+- Improved patch load, now the FW is selected automatically;
+- Fixed "Time Left" counter, after finish porting the counter is reseted;
+
+
+v1.1.15  08/09/2010
+- Added tool to create '.inp' file from LIB, usefully for developers;
+- Added character counter on 'Text Converter';
+- Improved Unicode(UTF16) support for 'Text Converter', if input text is unicode APAP mark 'Unicode' option automatically;
+- Fixed LOG date, now use standard yyyy-mm-dd_Log.txt;
+- Fixed crash when "LIB Folder" are moved, now default folder is Application path;
+- Fixed crash when pres "Hex -> Text" button with text as input;
+- Fixed counters and porting on body;
+- Fixed wrong LIB name;
+- Improved speedy on closer offsets;
+
+
+V1.1.14 14/08/2010
+- Fixed linebraks bug;
+- Small cosmetic changes;
+
+V1.1.13 14/08/2010
+- Added comment line when one offset is not ported;
+- Added 'Default LIB Folder' settings;
+- Added support for W890;
+- Added automatic language list, to create your version just past ".lng" file with others.
+- Improved speed on LIB Based Search;
+- Fixed wrong patch body size when one offset is moved to end of patch;
+- Fixed duplicate offset bug when next is not ported. Before: 11BC1D48: 2102DC10 481DBC11|Fixed: 11BC1D48: 2102DC10 XXXXXXXX
+- Fixed wrong LIB name when C902 FW is selected as Original FW;
+- Small cosmetic changes;
+- Strings moved in language files. ".lng";
+
+V1.1.12 27/07/2010
+- Added Offset at question "Save last patch body?";
+- Added ablility to save log on same folder as destination firmware;
+- Added revision for C902 FW;
+- Fixed porter name issue, when was blank got error;
+- Fixed string table, now strings recognize numbers;
+- Fixed LIB function LOG reporting;
+- Fixed LIB based search bug, improved algorithm;
+- Fixed Memory usage;
+- Fixed duplicate offset bug when next is not ported. Before: 09C3871009C38710|Fixed: 09C38710XXXXXXXX
+- Fixed minor bugs;
+- Improved configutarion mode, now you can set 
+independent settings for LIB, Advanced and generic patch;
+- Same phone model use LIB settings for all portings.
+
+V1.1.11 13/07/2010
+- Added Log option.
+- Added support for CHINA FW;
+- Added tabs on Tools tab;
+- Added default value when ask for body offset, default is File size +32bytes;
+- Added default value when ask for start address(blank code before FW), default is 1000;
+- Improved Automatic load code-page.
+- Improved patch load algorithm;
+- Improved reverse bytes function, when you reverse the result is copied to clipboard;
+- Increased window size.
+- Fixed Check LIB error 9 reported by Legas(se-nse);
+- Fixed some strings translations;
+- Fixed Russian Language, thanks to Yoti(mobilefree.ru) and Legas(se-nse);
+- Fixed Norwegian language, thanks to Olliw(se-nse);
+- Added Polish language, thanks to  godlesplay(se-nse);
+
+V1.1.10 25/06/2010
+- Added beta support for db2010/2012.
+- Fixed bug when search on beginning of FW.
+- Fixed problem with English language, fixed English as default Language;
+- Added Latvian language, thanks to Turismo(se-nse);
+
+V1.1.09 22/06/2010
+- Improved db32xx searching;
+- Fixed bug when porting db32xx LIB; 
+- Moved Calc tab to Tools tab;
+- Added "Check LIB" function, simple to use, select your FW on "Original FW" and click "check";
+- Increased window sizes.
+- Added thanks to den_po;
+- Fixed controls sequence, when you press tab button you jump o next control in right sequence;
+- Fixed bug when load FW;
+- Fixed bug when identify FW version;
+- Fixed minor bugs;
+- Added Russian language;
+- Added Norwegian Language;
+- Added Portuguese-BR language;
+
+V1.1.08 22/06/2010
+- Released with bugs, fixed and posted new version.
+
+V1.1.07 18/05/2010
+- Apap comes multilingual. If you wanna translate to your language download file "Lang.zip" and send to my Yahoo e-mail(Available on my profile).
+- Improved offsets search.
+- Fixed many errors in code.
+
+V1.1.06 15/05/2010
+- New search algorithm, now APAP ignores branch instructions;
+- Fixed minor errors;
+- Improved speed on Library Search;
+
+v1.1.05 12/05/2010
+- Added validation system, now you can configure the validation between 50%-95%.
+- Restored DB32xx search system, recommended Lib based search use.
+- Increased "number of tests" range setting.
+- Corrected/Removed "The Patch is not from selected Main Firmware, stop porting?" BUG.
+- Beta "Time Left" function on status bar.
+
+V1.1.03 30/04/2010
+- Fixed output commented lines;
+- Little cosmetic changes;
+- Fixed db32xx Main load, Now APAP create a single file "phone_app.bin" to work.
+- Small speed improvements.
+
+V1.1.02 28/04/2010
+- Automatic Update for Lib and dyn_const, to set AutoUpdate for lib need setting;
+- Offsets Search based on FW Library; (Idea by Farid)
+- Added ability to cancel porting.
+- Changes on Gui;
+- Added Tools tab;
+- Added "Remove Base from Patch" function;
+- Added byte reverser function;
+- Added HEX to Unicode and vice versa function;
+
+V1.1 06/04/2010
+- Fixed bug when load db32xx
+- Fixed bug when find patterns on db32xx
+- Fixed bug when port between db32xx
+- Fixed wrong start offset when load db32xx
+- Fixed bug when set an Offset before load second Main.
+- Improved "Quick Select" feature to change between mains.
+- Cosmetic changes.
+Quick Select function:
+ - Load a list from last used Mains in "Settings.ini" file.
+ - Ask at end if you wanna save in settings last offset body after port patches.
+ - Load last offset body from "Settings.ini" file, but is perfectly possible change after load.
+ - If main file is not present is removed from list.
+ - To add a new Main in list only select "Load..." in list.
+
+v1.0.06 25/03/2010
+- Fixed bug when load FW.
+- Fixed bug when detect FW version.
+- Fixed bug when detect FW offsets.
+- Minor changes.
+
+V1.0.05 24/03/2010
+- Improved speed about 95% in a sequential patches
+- Improvement general speed smaller than 10%;
+- Beta suport db32xx phones;
+- Ask for patch body offsets works with or without base;
+- When use db3210 and file "phone_emp_app.cxc" not found APAP ask for start offsets;
+- Libraries offsets are loaded from an ini file;
+- New setting "Number of tests";
+- Small bug fixes.
+
+V1.0.04
+- Support most A2v2
+- Identify A2 FW and ask the phone name.
+- Identify FW version.
+- Identify firmware offsets (cut and uncut).
+- New "Input" tab, for port directly from clipboard without patch file creation.
+- Option "Base needed".
+- New Splash screen by mc_kibel
+- End of developing by markross, Started development by Vitor_Boss®
+
+V1.0.03
+- now support almost all a2 models (thx zyonee)
+- added random splash by Nipoto & Photographer
+- no important changes
+
+V1.0.02
+- FIXED LIB PORTING
+- fixed crash at exit using "End" button
+- small improvement in "move" method
+- added splash by jockep
+
+V1.0.01
+- opening cxc files (i forgot )
+- no saving patch when you press cancel
+
+V1.0
+- correct results, no need to edit patch comments
+- improved lib porting (deal with this very well)
+- nicer interface
+- added settings (dealing with "move val" can improve porting in some cases)
+- calc 1.4, basing on my porter calculator description)
+- fixed big loops (>7 results program don't waste time and perform next test)
+- small fixes
+
+Beta 
+No references found

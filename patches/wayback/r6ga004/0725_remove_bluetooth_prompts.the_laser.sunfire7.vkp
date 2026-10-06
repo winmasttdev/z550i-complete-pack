@@ -1,0 +1,8 @@
+;Se-Zone.RU - Фан-Клуб любителей телефонов Sony Ericsson 
+;Z550 SW-R6GA004
+;Убрать подтверждение при принятии файла через bluetooth.
+;remove "accept file? (yes/no)" prompt when receiving files over bluetooth/etc.
+;© the_laser
+;(p)sunfire7
++44140000
+38F370: 5517 251A

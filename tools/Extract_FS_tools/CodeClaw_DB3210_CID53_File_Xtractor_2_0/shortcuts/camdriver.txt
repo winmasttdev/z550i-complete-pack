@@ -1,0 +1,3 @@
+IFS/settings/camera/camdriver0.dat
+IFS/settings/camera/camdriver1.dat
+IFS/settings/camera/camdriver2.dat

@@ -1,0 +1,13 @@
+;Z550 SW-R6CA009 prgCXC_1250583_GENERIC_ML
+;Сдвиг кучи! больше стабильности патчам!
+;heap shift! more stability for patches!
+;(c)den_po
+;(p)Absolutew800i
+;Большое спасибо den_po за помощь.
+;v.64k
+;info 4 patchmakers: 4C268008...4C278007
+;this info is firmware version dependent
+44F5DA7E: 7E486860 7E498847
+44F5DC78: 00301100 A5769444
+449476A4: 7863313235303538335F47454E455249 0CB50649002301229203036004300439
+449476b4: 435F4D4C5C4941522D41524D375C7372 013A002AF9D1286069600CBD00301100

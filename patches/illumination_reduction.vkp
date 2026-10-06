@@ -1,0 +1,24 @@
+;Z550 SW-R6CA009
+;Снижение уровня регулировки подсветки на 20 процентов
+;При значении 50 процентов, подсветка клавиатуры отключается
+;Reduction in a level of adjustment of illumination on 20 percent
+;At value of 50 percent, illumination of the keyboard is off
+;(c) Mobilefree
+;(p) Shadow
+4526FF7A: 2628 0D28
+4526FF82: 3129 1629
+4526FF8A: 3D29 2629
+4526FF92: 4A29 3129
+4526FF9A: 5729 3D29
+4526FFBA: 2520 0C20
+4526FFBE: 3020 1520
+4526FFC2: 3C20 2520
+4526FFC6: 4920 3020
+4526FFCA: 5620 3C20
+4526FFCE: 6420 4920
+454F0AF8: 2429 0B29
+454F0AFC: 2424 0B24
+454F0B00: 652C 4A2C
+454F0B04: 6424 4924
+454F0B52: 2428 0B28
+454F0B56: 6528 4A28

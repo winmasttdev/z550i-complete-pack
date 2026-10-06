@@ -1,0 +1,52 @@
+jdflasher / FAR plugin — what is here and how it applies to the Z550i (DB2010, A100/A1 platform)
+
+WHERE IT CAME FROM
+  tools/FARManager_A1_jdflFAR.7z        20.2 MB  FAR Manager build that already ships the jdflasher plugin
+                                        https://operationse.github.io/tools.html  (link id 8aba4dd9...)
+  tools/far_A1_extract/                85 MB    the three Sony-relevant plugins unzipped out of that archive
+  plugins/sefp2w/                      1.9 MB   SEFP 2 filesystem plugin (same plugin, from SE-NSE instead)
+  plugins/FAR_CXC_Patcher/             4 x dll  FAR CXC Patcher plugin, x86 + x64, wide + narrow FAR builds
+
+WHAT THE Z550i ACTUALLY USES (this is the important part)
+  jdflasher plugin folder: tools/far_A1_extract/FARManager/Plugins/jdflasher/
+    2010_49/DB2010cid49Red.hdr      <-- select THIS header. DB2010 is the Z550i/W810i chipset,
+                                         and CID 49 RED is a retail Z550i. DB2010cid49Brown.hdr
+                                         is the developer-unit variant, do not use it.
+    2010_49/K510_Z530_Z550.ose      <-- the flashing script/profile covering the Z550i
+                                         (K510 / Z530 / Z550 share it)
+    bin/                            flashers and CS loaders. For a CID49 red Z550i the relevant
+                                         ones are DB2010_FLASHLOADER_R2A003.2010_49_RED and the
+                                         COMPACT_SEMC_CS_LOADER / db2010_cid49brown_cs_* entries.
+    rest/                           182 rest files for the whole DB2xxx range. drop firmware/rest/* here
+    scripts/                        XML profiles: db2012.xml, Pach_DB2012_CID52.xml,
+                                         DB2012_Pach_CID53.xml, db2020.xml, pnx5230.xml ...
+    make_rest/                      ssw2rest + readme, generates a .rest file from a MAIN .mbn
+
+  plugins/sefp2w/                     SEFP 2: read/write the phone filesystem (A1 phones).
+  plugins/FAR_CXC_Patcher/            patch CXC containers from inside FAR.
+
+HOW TO PATCH A Z550i WITH THIS (the documented flow, matches
+tools/docs/operationse_db2010_cid49_patching.html)
+  1. run FAR Manager (32-bit; on modern Windows use a 32-bit VM), F11 -> "just da flasher"
+  2. choose DB2010 CID49 RED + DCU-60 cable, then "jump down into a large rabbit hole"
+  3. battery out, battery back in, plug in while holding C
+  4. four modes appear: bflash (flash .vkp patches), bfs (broken fs, full access),
+     oflash (official flash), ofs (official fs)
+  5. bflash -> it flashes a broken bootloader, reseat battery, replug while holding C
+  6. you land in a "memory" pane; copy your .vkp into it with F5 and confirm "as vkp patch"
+  7. to UNDO a patch, tick "remove patch" on it
+  8. go up two levels, answer yes, then "restore firmware = YES" to put the real bootloader back
+
+NOTES / CAVEATS
+  - SEtool2 Lite refuses CID 53 on some DB2020 units; on DB2010 CID49 it works
+    (tools/setool2lite.exe, + qamaker.exe to build a quick-access patch from a MAIN .mbn).
+  - justdanpo.ru (the classic jdflasher.7z host linked from lpcwiki) is DEAD — DNS does not
+    resolve. The plugin above comes from operationse.github.io instead and is the same
+    jdflasher code.
+  - the 32-bit FAR from farmanager.com/history/far2.x86.msi is referenced by lpcwiki as the
+    "official link"; the operationse build here is already 32-bit and pre-loaded, so you do
+    not need it, but the URL is recorded in tools/docs/lpcwiki_Flashing_SonyEricsson.html.
+  - drivers: tools/GordonsGateFlashDriver_ggsetup-3.0.0.7.exe (3.75 MB, official-ish 3.0.0.7),
+    tools/GordonGateDrivers/ (ggsemc/ggflt .sys + .inf + .cat for x86/x64, plus the older
+    2006 gg-setup.exe and the 4-in-1-cable FTDI driver set). jdflasher also bundles its own
+    copy under jdflasher/drivers/.

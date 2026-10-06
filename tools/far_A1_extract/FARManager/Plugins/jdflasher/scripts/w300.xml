@@ -1,0 +1,63 @@
+<?xml version="1.0" standalone="no" ?>
+<device name="w300">
+  <cid num="49" color="red">
+    <oflash>
+      <qhldr>061113 1250 COMPACTPRODUCTION_ID_LOADER P3L.2010_0_BLUE</qhldr>
+      <cmd3c>060718 0842 DB2010_FLASHLOADER_R2A003.2010_49_RED</cmd3c>
+      <activateloader/>
+    </oflash>
+    <bflash break="2010_49" writeboot="4414_p3k.boot" ose="W300.ose">
+      <qhtry>2010_header_p3l</qhtry>
+      <run/>
+      <cmd3c>2010_f_p5g</cmd3c>
+      <activateloader/>
+    </bflash>
+    <ofs>
+      <qhldr>061113 1250 COMPACTPRODUCTION_ID_LOADER P3L.2010_0_BLUE</qhldr>
+      <cmd3c>070524 1030 COMPACT_SEMC_CS_LOADER__R3A010.2010_49_RED</cmd3c>
+      <activatecsloader/>
+    </ofs>
+    <bfs break="2010_49" writeboot="4414_p3k.boot" ose="W300.ose">
+      <qhtry>2010_header_p3l</qhtry>
+      <run/>
+      <cmd3c>db2010_cid49brown_cs_V26.bin</cmd3c>
+      <activatecsloader/>
+    </bfs>
+  </cid>
+  <cid num="49" color="brown">
+    <oflash>
+      <qhldr>061113 1250 COMPACTPRODUCTION_ID_LOADER P3L.2010_0_BLUE</qhldr>
+      <cmd3c>060316 1339 DB2010_FLASHLOADER_R5A.2010_49_BROWN</cmd3c>
+      <activateloader/>
+    </oflash>
+    <bflash break="2010_49" writeboot="4414_p3k.boot" ose="W300.ose">
+      <qhtry>2010_header_p3l</qhtry>
+      <run/>
+      <cmd3c>2010_f_p5g</cmd3c>
+      <activateloader/>
+    </bflash>
+    <ofs>
+      <qhldr>061113 1250 COMPACTPRODUCTION_ID_LOADER P3L.2010_0_BLUE</qhldr>
+      <cmd3c>db2010_cid49brown_cs_V26.bin</cmd3c>
+      <activatecsloader/>
+    </ofs>
+    <bfs break="2010_49" writeboot="4414_p3k.boot" ose="W300.ose">
+      <qhtry>2010_header_p3l</qhtry>
+      <run/>
+      <cmd3c>db2010_cid49brown_cs_V26.bin</cmd3c>
+      <activatecsloader/>
+    </bfs>
+  </cid>
+  <cid num="50" color="red">
+    <oflash>
+      <qhldr>060712 1520 DB2012_FLASHLOADER_R1A002.2012_50_RED</qhldr>
+      <activateloader/>
+    </oflash>
+    <ofs>
+      <qhldr>070129 1112 DB2010_PRODUCTIONIDLOADER_P4D.2012_0_BLUE</qhldr>
+      <cmd3c>070410 1405 COMPACT_SEMC_CS_LOADER_1_R3B009.2012_50_RED</cmd3c>
+      <activatecsloader/>
+    </ofs>
+  </cid>
+
+</device>

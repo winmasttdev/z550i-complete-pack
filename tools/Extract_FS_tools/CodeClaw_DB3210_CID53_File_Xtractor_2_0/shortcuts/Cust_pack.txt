@@ -1,0 +1,19 @@
+//Made by DAHILIANA for DB3210 CID53 File Xtractor
+TPA/preset/custom/SETT_WALLPAPER_HOOK_1.itm
+TPA/preset/custom/SETT_STARTSHOW_HOOK_1.itm
+TPA/preset/custom/SETT_SCREENSAVER_HOOK_1.itm
+TPA/preset/custom/SETT_RINGTONE_HOOK_1.itm
+TPA/preset/custom/preloaded_config.xml
+TPA/preset/custom/ORG_APPLICATIONS_HOOK_3.itm
+TPA/preset/custom/MC_VIDEO_HOOK_3.itm
+TPA/preset/custom/MC_VIDEO_HOOK_10.itm
+TPA/preset/custom/MC_PHOTO_HOOK_3.itm
+TPA/preset/custom/MC_MUSIC_HOOK_3.itm
+TPA/preset/custom/GAMES_HOOK_3.itm
+TPA/preset/custom/FM_VIDEOS_HOOK_3.itm
+TPA/preset/custom/FM_THEMES_HOOK_3.itm
+TPA/preset/custom/FM_SOUNDS_HOOK_3.itm
+TPA/preset/custom/FM_PICTURES_HOOK_3.itm
+TPA/preset/custom/Customize.xml
+TPA/preset/custom/CONTENT_DOWNLOAD_HOOK.itm
+TPA/preset/custom/RIGHT_SOFTKEY_HOOK.itm

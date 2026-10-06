@@ -1,0 +1,20 @@
+CC0 1.0 Universal
+
+The organizational work in this repository — the collection, curation,
+deduplication, documentation (INDEX.md, README.md, RELEASE_NOTES.md),
+checksums, and directory structure — is dedicated to the public domain
+under CC0 1.0.
+
+The binary content (firmware, patches, tools, drivers, acoustic packs,
+source archives) remains the property of its respective owners:
+Sony Ericsson Mobile Communications, individual patch/tool authors,
+and archive.org / perk11.info / firmware.center. This repository is a
+preservation effort; no copyright claim is made over the binary files.
+
+To the extent possible under law, the person who associated CC0 with
+this work has waived all copyright and related or neighboring rights
+to the organizational work. You may copy, modify, distribute, and
+perform the work, even for commercial purposes, all without asking
+permission.
+
+For the full legal text, see https://creativecommons.org/publicdomain/zero/1.0/legalcode

@@ -1,0 +1,41 @@
+# se-zone.ru Z550i files recovered from the Wayback Machine 2026-10-06
+# kind	wayback_timestamp	original_url	sesource_basename	bytes	md5	installed_path
+elf	20130913222530	http://se-zone.ru/elfs//files/elfs/87.zip	elf_87.zip	3105	c8221afd8c219fa52a8336b07cd5ca0a	elfpack/wayback/elfs/87_volumeplay_v2.2/pkg.zip
+elf	20130914030910	http://se-zone.ru/elfs//files/elfs/89.zip	elf_89.zip	5510	f0cb7f34c056fadd51db5b99a873f46d	elfpack/wayback/elfs/89_extopen_v3/pkg.zip
+elf	20130914074647	http://se-zone.ru/elfs//files/elfs/100.zip	elf_100.zip	32304	d8bc9ef1860730bbda20f936df2fc46f	elfpack/wayback/elfs/100_eventcontrol_evtedit_evtdesk/pkg.zip
+elf	20130914115148	http://se-zone.ru/elfs//files/elfs/98.zip	elf_98.zip	114823	dbc3867ba5d0bbbb5eb438e39b719966	elfpack/wayback/elfs/98_fontviewer/pkg.zip
+elf	20130914193426	http://se-zone.ru/elfs//files/elfs/91.zip	elf_91.zip	5324	fd9d7e71136caf4791d61483a1364980	elfpack/wayback/elfs/91_callfilter_v0.9/pkg.zip
+elf	20130915021142	http://se-zone.ru/elfs//files/elfs/86.zip	elf_86.zip	1851	be7b6dc6a8745503988fbe5af73c97b9	elfpack/wayback/elfs/86_fscaller/pkg.zip
+elf	20130915131134	http://se-zone.ru/elfs//files/elfs/97.zip	elf_97.zip	12041	49b2392138d16b005753cfc92ddeac05	elfpack/wayback/elfs/97_registryeditor_v1.5.2/pkg.zip
+elf	20130915153346	http://se-zone.ru/elfs//files/elfs/90.zip	elf_90.zip	9232	d99aef19200ffcf4ded43ac1e2fa90bb	elfpack/wayback/elfs/90_livebalancelite_v1.1/pkg.zip
+elf	20130915205626	http://se-zone.ru/elfs//files/elfs/99.zip	elf_99.zip	1219	edd9216849bb498cd681216319656d25	(not installed: duplicate or rejected)
+elf	20130916031717	http://se-zone.ru/elfs//files/elfs/93.zip	elf_93.zip	1585	552d3fbaa588e870bc66e2d16e52f92c	elfpack/wayback/elfs/93_layout_change/pkg.zip
+elf	20130916032233	http://se-zone.ru/elfs//files/elfs/94.zip	elf_94.zip	7042	37422e3cd88a16190b77e2887fcf0cde	elfpack/wayback/elfs/94_find_files_v0.1fix3/pkg.zip
+elf	20130916180301	http://se-zone.ru/elfs//files/elfs/92.zip	elf_92.zip	2108	bcf837f4e01918b0d28182092b742589	elfpack/wayback/elfs/92_deception_battery_and_signal/pkg.zip
+elf	20130916181105	http://se-zone.ru/elfs//files/elfs/95.zip	elf_95.zip	13619	13e945e3fcc0ac95c634214a0fbec4be	elfpack/wayback/elfs/95_grar_v1.1/pkg.zip
+elf	20140915020405	http://se-zone.ru/elfs//files/elfs/96.zip	elf_96.zip	2642	6fe7da9c68d9e7722077535dbc98da95	elfpack/wayback/elfs/96_smsview/pkg.zip
+elfpack	20140915055826	http://se-zone.ru/elfs//files/elfpacks/5.zip	elfpacks_5.zip	16230	19e526fb830b21f540a4ae23e2219228	elfpack/wayback/elfpack_id5/z550_r6ca009_ElfPack_sezone-id5.zip
+lib	20130915093634	http://se-zone.ru/elfs//files/libs/53.vkp	libs_53.vkp	61690	0064787951f6d08f72d73a48ebfc77f5	elfpack/wayback/libraries/z550_r6ga004.lib.sezone-v2013.vkp
+lib	20130915171003	http://se-zone.ru/elfs//files/libs/52.vkp	libs_52.vkp	61699	d3810b645087dd425137cfb3514f0d01	elfpack/wayback/libraries/z550_r6ca009.lib.sezone-v2013.vkp
+patch	20081012013647	http://www.se-zone.ru:80/patches//files/726.vkp	726.vkp	181	65451432679ab02e13d0da3c3898aefc	patches/wayback/r6ga004/0726_radio_without_headset.SiNgle.sunfire7.vkp
+patch	20091002194328	http://se-zone.ru:80/patches/files/1024.vkp	1024.vkp	823	525688c779667627517ededd806c6f71	patches/wayback/r6ca009/1024_win1251_encoding_support.Hussein.IronMaster.vkp
+patch	20091002194335	http://se-zone.ru:80/patches/files/1113.vkp	1113.vkp	895	870b1d5c32d534e4fe3fb518f7d94507	patches/wayback/r6ca009/1113_change_language_folder.tpa_preset_system_language.vkp
+patch	20091002194340	http://se-zone.ru:80/patches/files/723.vkp	723.vkp	335	d383f8147ed50eaa89a337b60fed88cc	patches/wayback/r6ga004/0723_sms_melody_time.svinuk.sunfire7.vkp
+patch	20091002194350	http://se-zone.ru:80/patches/files/745.vkp	745.vkp	758	c4b912b1f92b6834a8e7431593619ab5	patches/wayback/r6ca009/0745_vibration_on_call_start.siNgle.Absolutew800i.v2.vkp
+patch	20091002194355	http://se-zone.ru:80/patches/files/749.vkp	749.vkp	561	d0cbbdbc1f5138b740e7b78ab2942625	patches/wayback/r6ca009/0749_heap_shift.den_po.Absolutew800i.v64k.vkp
+patch	20091002194401	http://se-zone.ru:80/patches/files/922.vkp	922.vkp	408	c7c6d98d68aa5d273394f8096faaa4c5	patches/wayback/r6ga004/0922_remove_nosound_message.SiNgle.YAR.Mobilefree.vkp
+patch	20091002194406	http://se-zone.ru:80/patches/files/924.vkp	924.vkp	456	abd4ea8897006b09c1ac517cec5df2c9	patches/wayback/r6ga004/0924_player_control_by_headset.SiNgle.m1ch43lzm.vkp
+patch	20091002194411	http://se-zone.ru:80/patches/files/927.vkp	927.vkp	359	81178e92a0637000ee715ab032944d36	patches/wayback/r6ga004/0927_no_simwizard_on_sim_change.SiNgle.vkp
+patch	20091002194419	http://se-zone.ru:80/patches/files/929.vkp	929.vkp	393	d8a501bee4ac770b94ec10fc5eb194b5	patches/wayback/r6ga004/0929_right_softkey_to_mediaplayer.nkls.vkp
+patch	20091002194421	http://se-zone.ru:80/patches/files/930.vkp	930.vkp	14913	492c3751b17c6c975481577ba9312f8c	patches/wayback/r6ga004/0930_font60_in_sleep_mode.IronMaster.vkp
+patch	20091002194426	http://se-zone.ru:80/patches/files/987.vkp	987.vkp	1122	fe28112dc57a9b400e725fd836af13e2	patches/wayback/r6ca009/0987_improved_player.IronMaster.vkp
+patch	20091002194433	http://se-zone.ru:80/patches/files/988.vkp	988.vkp	283	a7c87a5136deaaf3c7296d60ff4e8a54	patches/wayback/r6ca009/0988_black_song_color_in_list.IronMaster.vkp
+patch	20091002194437	http://se-zone.ru:80/patches/files/999.vkp	999.vkp	14010	f6825251b66310984bfc53c14d9d37ba	patches/wayback/r6ca009/0999_privacy_2.5_fix.vkp
+patch	20091002194638	http://se-zone.ru:80/patches/files/1124.vkp	1124.vkp	430	029ace3562d1c4eedc63dcef425bcbb4	patches/wayback/r6ca009/1124_remove_voicerecorder_beeps.siNgle.jasiek.Hishchnik.vkp
+patch	20091002194644	http://se-zone.ru:80/patches/files/1336.vkp	1336.vkp	324	3a09c3e2355b5ba7f6a4f054177e1aff	patches/wayback/r6ca009/1336_radio_without_headset.siNgle.NuKEr2k.vkp
+patch	20091002194649	http://se-zone.ru:80/patches/files/725.vkp	725.vkp	275	8e5bef50f5ee90e460b93eb8d42538e1	patches/wayback/r6ga004/0725_remove_bluetooth_prompts.the_laser.sunfire7.vkp
+patch	20091002194654	http://se-zone.ru:80/patches/files/747.vkp	747.vkp	261	0300e8ccb976dede25d722f335d692ef	patches/wayback/r6ca009/0747_remove_bluetooth_prompts.the_laser.Shadow.vkp
+patch	20091002194659	http://se-zone.ru:80/patches/files/923.vkp	923.vkp	406	bd839e985c42f97ede49f74024e0cd9a	patches/wayback/r6ga004/0923_photo_while_java_running.SiNgle.Sunfire7.vkp
+patch	20091002194704	http://se-zone.ru:80/patches/files/925.vkp	925.vkp	411	7244bc345594088a5a97e3545531ef29	patches/wayback/r6ga004/0925_faster_long_filename_scrolling.SiNgle.stuCk.vkp
+patch	20091002194709	http://se-zone.ru:80/patches/files/926.vkp	926.vkp	563	45108ace92ff5360d15a4a864022ba0c	patches/wayback/r6ga004/0926_fast_rewind_long_mp3_video.SiNgle.vkp
+patch	20091002194714	http://se-zone.ru:80/patches/files/928.vkp	928.vkp	451	9fa7650539786fb8f7e832978486655c	patches/wayback/r6ga004/0928_original_eq_settings_to_megabass.Adow.vkp

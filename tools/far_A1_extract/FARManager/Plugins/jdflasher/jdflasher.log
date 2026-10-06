@@ -1,0 +1,60 @@
+log started. plugin compiled Jun 30 2008 / 00:17:24
+create session object
+used script: db2020.xml
+turn off the phone, hold "c" button and plug usb cable
+found EPIUSB1
+connecting...
+got response
+protocol: 0301 baseband: 9900
+cid detect
+<- cid=52 color=red platform=db2020
+create session object
+used script: qa2020.xml
+turn off the phone, hold "c" button and plug usb cable
+found EPIUSB1
+connecting...
+got response
+protocol: 0301 baseband: 9900
+cid detect
+<- cid=52 color=red platform=db2020
+qhtry: 2020_prologue
+run flashed loader
+<- hello: quick access patch by den_po
+ldr: 2020_cs_R3A006
+<- hello.cs: 070125 1328 GEN..._DB2020_CSLOADER_R3A006, den_po
+activatecsloader
+activating cs loader
+starting FS server
+cd /
+error: SetDirectory(setdir(setdir(bad 89data (code 0xFF08))))
+create session object
+used script: qa2020.xml
+turn off the phone, hold "c" button and plug usb cable
+found EPIUSB1
+connecting...
+got response
+protocol: 0301 baseband: 9900
+cid detect
+<- cid=52 color=red platform=db2020
+create session object
+used script: qa2020.xml
+turn off the phone, hold "c" button and plug usb cable
+found EPIUSB1
+connecting...
+got response
+protocol: 0301 baseband: 9900
+cid detect
+<- cid=52 color=red platform=db2020
+qhtry: 2020_prologue
+run flashed loader
+<- hello: quick access patch by den_po
+ldr: 2020_f_R2A005
+<- hello: 061201 1314 HA..._DB2020_FLASHLOADER_R2A005, den_po
+activateloader
+flashID: 897E (Manufacturer: Intel)
+<- OTP: status 0 locked 1 cid 51 cert 1 IMEI 35777401xxxxxx
+reading 4 blocks
+making a patched babe
+flashing babe: w880_r8ba024_remove_simlock.vkp
+flashing 4 blocks
+4 blocks flashed ok

@@ -1,0 +1,10 @@
+;Z550 SW-R6CA009
+;Время и Дата вверху экрана
+;заместо лого оператора
+;Time and Date move to up
+;replase logo operator -> Time and Date
+;Ver 2.5
+;©supertrubka.org
+;(p)Absolutew800i
+45264A5E: 0B21 0321
+45264A68: 0C21 0121

@@ -1,0 +1,15 @@
+# se-zone.ru Z550i file endpoints
+#
+# STATUS 2026-10-06: every download.php endpoint below returns HTTP/2 302 -> location: /
+# (verified with curl HEAD/GET, with and without Referer, cookies and browser headers).
+# The listing pages themselves still render fine (HTTP 200), so the catalogue is intact
+# but the binary download handler is gated. Sizes are therefore unknown.
+#
+# Nothing in this repo was fetched from these URLs; the working binaries came from
+# archive.org item 'se-z-550i' and archive.perk11.info instead.
+# Re-attempt from an account/IP the site accepts, then drop files into ../patches and ../../elfpack.
+#
+# format: section  firmware  page  name  author  download_url  info_page
+elfs     r6ca009  p1  [ELFPACK/LIB]                                                     https://se-zone.ru/elfs/download.php?mode=elfpack&id=5
+elfs     r6ca009  p1  [ELFPACK/LIB]                                                     https://se-zone.ru/elfs/download.php?mode=lib&id=52
+elfs     r6ga004  p1  [ELFPACK/LIB]                                                     https://se-zone.ru/elfs/download.php?mode=lib&id=53

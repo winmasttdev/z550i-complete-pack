@@ -1,0 +1,5 @@
+removed .git/ from this shallow clone of https://github.com/farid1991/patch-se.git
+clone HEAD was 066d78b0674dc7e0cab52a90e2d064d51754e31c
+the clone metadata was stripped before publication because its reflogs contained the
+archiver's local git identity; re-clone upstream to get history:
+  git clone https://github.com/farid1991/patch-se.git

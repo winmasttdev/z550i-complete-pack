@@ -1,0 +1,7 @@
+;Z550 SW-R6CA009
+;Игнорирование "Полномочий" для явы
+;remove java security restrictions
+;(с) the_laser
+;(p) HierOS
+45510832: 01D0 01E0
+45510838: 00 01

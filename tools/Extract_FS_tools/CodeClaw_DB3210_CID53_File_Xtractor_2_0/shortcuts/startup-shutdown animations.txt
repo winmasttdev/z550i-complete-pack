@@ -1,0 +1,5 @@
+//By Jock
+tpa/preset/system/settings/STARTUP_IMAGE_SEMC.gif
+tpa/preset/system/settings/STARTUP_SOUND_SEMC.mp3
+tpa/preset/system/settings/splash
+tpa/preset/system/settings/SHUTDOWN_IMAGE_SEMC

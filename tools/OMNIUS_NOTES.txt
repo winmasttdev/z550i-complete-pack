@@ -1,0 +1,38 @@
+Omnius for SE — notes only, nothing downloadable was verified
+
+WHAT IT IS
+  A general Sony Ericsson flashing/unlocking tool. Free since 2024. Works from the A100
+  platform upward, so it covers the Z550i (DB2010). Does flashing, GDFS/TA backup,
+  user-code and network unlock, and software-security-certificate replacement.
+
+STATUS OF THE DOWNLOAD AS OF 2026-10-06
+  DEAD / NOT RESOLVABLE. lpcwiki points at it via a MEGA.nz file
+  (https://drive.google.com/file/1j6i5GNZ5tTpC5pjdTSqfQq6PxrvfOpsl/view — the "here" next to
+  "Omnius can be downloaded") and operationse.github.io/download_links.html now redirects
+  Omnius to the Kaijousuru archives:
+      https://archives.kaijousuru.com/
+      https://kaijousuru.com
+  Both hosts fail DNS resolution from this machine (curl: "Could not resolve host"), and the
+  MEGA public-folder API returns error -15 for those handles. So: no Omnius binary here.
+  Re-check those three URLs later, or ask in the Kaijousuru Discord (link in lpcwiki).
+
+SETUP NOTES (from lpcwiki, for when you do get it)
+  - Windows XP or newer; Gordon's Gate Flash Drivers installed (we have those, see tools/).
+  - account login via the Omnius website is currently broken; you must open a ticket in the
+    Kaijousuru Discord to get an account.
+  - Server tab -> Server Settings -> paste user/pass -> tick "Access the server via hostname" -> Save.
+  - Actions tab -> Phone type -> pick the model -> Identify. UIQ / early A1 phones get an
+    "Operation Settings" dialog for cable type and speed; use DCU-60/DCUE-65.
+  - Connect with the phone OFF, battery out/in, holding C.
+  - flashing: put MAIN (.mbn) and Raw FS (.fbn) into
+    C:\ProgramData\Omnius for SE\Flashes\<model>\ ; customization pack either selected
+    manually ("Do not perform default customization") or let Omnius pick a built-in one.
+
+WHY THIS IS NOT A PROBLEM HERE
+  Everything Omnius would do is covered by the files already in this repo:
+  XS++ 3.1 (tools/) for official flash + FSX, SETool2 Lite (tools/) for official flash,
+  FAR + jdflasher + SEFP2 (tools/far_A1_extract/, plugins/) for break mode, filesystem
+  access and .vkp patching. Omnius is a convenience wrapper, not a dependency.
+
+REFERENCE
+  tools/docs/lpcwiki_Flashing_SonyEricsson.html — full article, mirrored locally.

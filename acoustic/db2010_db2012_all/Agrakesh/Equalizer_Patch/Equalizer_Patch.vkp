@@ -1,0 +1,7 @@
+;W810 SW-R4EA031
+;Equalizer settings for Normal, Bass, Voice
+;Generated with Equalizer Wizard 1.1 by markross
++44140000
+7FDDF3: 0000000000 08FCFDFE08;Normal
+7FDDF8: 0500000003 08FA000208;Bass
+7FDE02: 0000000600 0804020308;Voice

@@ -1,0 +1,38 @@
+SETool2 Lite — files, links, and how it relates to the Z550i
+
+FILES HERE
+  tools/setool2lite.exe    4.27 MB   SEtool2 Lite (SEtool2lt.exe), dated 2007-08-31 in the
+                                     archive it came from. The classic Sony Ericsson
+                                     "official flash" flasher for A100/A1 phones.
+  tools/qamaker.exe        29 KB     drag a MAIN .mbn onto it -> produces a quick-access
+                                     .vkp patch. You flash that patch first so you can
+                                     reach break mode faster on a CID-locked phone.
+  tools/SIMLockPatchGen.exe 278 KB  generates a .vkp that removes carrier lock.
+
+WHERE THEY CAME FROM
+  setool2lite.exe, qamaker.exe, SIMLockPatchGen.exe were all downloaded from
+  https://operationse.github.io/tools.html  (the Operation SE documentation's tool page,
+  which lists Driver / XS++ / A2Uploader / FAR Manager / qamaker / SimLockPatchGen).
+  A second, byte-identical copy of setool2lite.exe and of the SIMLockPatchGen came inside
+  archive.org item "se-z-550i"; see _sources/SE_Z550i_archive.org.zip.
+  patches/simlock/Remove_SIM_lock_Z550_R6CA009_GENERIC.vkp is the generated output for this
+  exact phone/firmware (header: "Z550 SW-R6CA009-GENERIC ... (p) Remove SIM-lock patch
+  generator v2.2"), so it is already ready to flash.
+
+VERSION / LINK NOTES
+  - Operation SE documents SETool2 Lite as working only for DB2010/DB2012/DB2020 and NOT for
+    CID 53 DB2020 units. A Z550i is DB2010, so it is in scope, on CID 49 RED.
+  - lpcwiki (tools/docs/lpcwiki_Flashing_SonyEricsson.html) links SETool2 Lite as a MEGA.nz
+    file (https://mega.nz/folder/2aoVnJJJ#ovZJG4cbvIOqLVEJBHrQSQ/file/OLhQnCJI). MEGA's
+    public-folder API returns -15 for those handles, so that specific link could not be
+    resolved; the operationse copy above is the substitute and it is the one that matters.
+  - the "rest" files SETool expects next to it are in firmware/rest/ (182-file superset
+    included; the Z550-relevant ones are R6CA009_CXC1250583_GENERIC_ML,
+    R6CA009_CXC1250584_HONG_KONG_ML, R6CA009_CXC1250586_CHINA_ML and the five
+    r6ba033_CXC12505xx_* variants) plus ssw2rest.exe to make new ones.
+  - SEtool also dumps a GDFS backup next to the exe; firmware/Z550_GDFS.bin is a 60 KB
+    sample GDFS from firmware.center, useful as a format reference only — never write
+    someone else's GDFS into the phone.
+  - the "SEtool method" section of lpcwiki is literally "To be added", so it is not a
+    usable doc. Use tools/docs/operationse_db2010_cid49_patching.html for the jdflasher
+    flow and tools/docs_tutorials/Tutorial General Usage - XS++ v3.1/ for XS++.

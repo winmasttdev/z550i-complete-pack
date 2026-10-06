@@ -1,0 +1,51 @@
+<?xml version="1.0" standalone="no" ?>
+<device name="db2012">
+  <cid num="50" color="red">
+    <oflash>
+      <qhldr>060712 1520 DB2012_FLASHLOADER_R1A002.2012_50_RED</qhldr>
+      <activateloader/>
+    </oflash>
+    <ofs>
+      <qhldr>060712 1520 DB2012_FLASHLOADER_R1A002.2012_50_RED</qhldr>
+      <activateloader/>
+      <cmd3c>070410 1405 COMPACT_SEMC_CS_LOADER_1_R3B009.2012_50_RED</cmd3c>
+      <activatecsloader/>
+    </ofs>
+  </cid>
+  <cid num="51" color="red">
+    <oflash>
+      <qhldr>061205 1354 DB2012_FLASHLOADER_R2B012.2012_51_RED</qhldr>
+      <activateloader/>
+    </oflash>
+    <ofs>
+      <qhldr>061205 1354 DB2012_FLASHLOADER_R2B012.2012_51_RED</qhldr>
+      <activateloader/>
+      <cmd3c>070410 1405 COMPACT_SEMC_CS_LOADER_1_R3B009.2012_51_RED</cmd3c>
+      <activatecsloader/>
+    </ofs>
+  </cid>
+  <cid num="52" color="red">
+    <oflash>
+      <qhldr>061205 1354 DB2012_FLASHLOADER_R2B012.2012_52_RED</qhldr>
+      <activateloader/>
+    </oflash>
+    <ofs>
+      <qhldr>061205 1354 DB2012_FLASHLOADER_R2B012.2012_52_RED</qhldr>
+      <activateloader/>
+      <cmd3c>070410 1405 COMPACT_SEMC_CS_LOADER_1_R3B009.2012_52_RED</cmd3c>
+      <activatecsloader/>
+    </ofs>
+  </cid>
+  <cid num="53" color="red">
+    <oflash>
+      <qhldr>071219 1257 ESG_DB2012_FLASHLOADER_R2B017_CXC1326738.DB2012_CID53_RED</qhldr>
+      <activateloader/>
+    </oflash>
+    <ofs>
+      <qhldr>071219 1257 ESG_DB2012_FLASHLOADER_R2B017_CXC1326738.DB2012_CID53_RED</qhldr>
+      <activateloader/>
+      <cmd3c>070904 1147 AN2CXC1327364_COMPACT_SEMC_CS_LOADER_1_R3B014.DB2012_CID53_RED</cmd3c>
+      <activatecsloader/>
+    </ofs>
+  </cid>
+</device>

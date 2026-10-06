@@ -1,0 +1,2 @@
+tpa/system/layout/layout_main.xml
+tpa/system/layout/Music_Gui_NowPlaying.xml

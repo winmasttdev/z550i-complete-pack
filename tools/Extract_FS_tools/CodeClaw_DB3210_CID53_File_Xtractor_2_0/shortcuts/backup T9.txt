@@ -1,0 +1,3 @@
+//Made by Jock for DB3210 CID53 File Xtractor
+tpa/preset/system/language/user_cdb.t9
+tpa/preset/system/language/wdb.t9

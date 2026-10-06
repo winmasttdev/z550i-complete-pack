@@ -1,0 +1,11 @@
+;Z550 SW-R6CA009 
+;Удалить гудки при записи разговора 
+;Remove voicerecorder beep 
+;© SiNgle 
+;(p) jasiek 
+;(p) Hishchnik 
+;v. 2.1 (fixed by FearHQ) 
+444F7F00: 1E 00 
+444F7F14: 14 00 
+45034432: 08D2 08E0 
+45034482: 03D1 03E0

@@ -1,0 +1,6 @@
+;Z550 SW-R6CA009 
+;Убрать звуки камеры при съемке 
+;© H3ct0R a.k.a. H3x 
+;(p) Hishchnik 
+14F0244: 70 00 ; camerafocus 
+14efd60: 70 00 ; camerashutter

@@ -1,0 +1,28 @@
+<?xml version="1.0" standalone="no" ?>
+<device name="z310">
+
+  <cid num="51" color="red">
+    <oflash>
+      <qhldr>061120 1602 R2A016_PNX5230_FLASHLOADER.5230_51_RED</qhldr>
+      <activateloader/>
+    </oflash>
+    <ofs>
+      <qhldr>061120 1602 R2A016_PNX5230_FLASHLOADER.5230_51_RED</qhldr>
+      <cmd3c>070503 1431 R3A015_PNX5230_CSLOADER.5230_51_RED</cmd3c>
+      <activatecsloader/>
+    </ofs>
+  </cid>
+
+  <cid num="52" color="red">
+    <oflash>
+      <qhldr>070212 1651 R2A019_PNX5230_FLASHLOADER.5230_52_RED</qhldr>
+      <activateloader/>
+    </oflash>
+    <ofs>
+      <qhldr>070212 1651 R2A019_PNX5230_FLASHLOADER.5230_52_RED</qhldr>
+      <cmd3c>070503 1431 R3A015_PNX5230_CSLOADER.5230_52_RED</cmd3c>
+      <activatecsloader/>
+    </ofs>
+  </cid>
+
+</device>

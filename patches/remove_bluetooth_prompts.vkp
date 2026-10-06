@@ -1,0 +1,6 @@
+;Z550 SW-R6CA009
+;Убрать подтверждение при принятии файла через bluetooth.
+;remove "accept file? (yes/no)" prompt when receiving files over bluetooth.
+;© the_laser
+;(p) Shadow
+444cf030: 89f2 59f5

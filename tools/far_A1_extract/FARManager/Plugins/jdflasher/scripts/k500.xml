@@ -1,0 +1,95 @@
+<?xml version="1.0" standalone="no" ?>
+<device name="k300/k500/k700">
+  <cid num="16" color="red">
+    <bflash>
+      <qhldr>050404 1011 COMPACTPRODUCTION_ID_LOADER R2F.2010_0_BLUE</qhldr>
+      <cmd3c>040319 0923 COMPACTCERTLOADER R2E.2010_0_BLUE</cmd3c>
+      <hole3e>2010_3e_r2f_r2e</hole3e>
+      <cmd3c>2010_f_p5g</cmd3c>
+      <activateloader/>
+    </bflash>
+    <bfs>
+      <qhldr>050404 1011 COMPACTPRODUCTION_ID_LOADER R2F.2010_0_BLUE</qhldr>
+      <cmd3c>040319 0923 COMPACTCERTLOADER R2E.2010_0_BLUE</cmd3c>
+      <hole3e>2010_3e_r2f_r2e</hole3e>
+      <cmd3c>2010_csold_R2C_setool</cmd3c>
+      <activatecsloader/>
+    </bfs>
+  </cid>
+  <cid num="16" color="brown">
+    <bflash>
+      <qhldr>050404 1011 COMPACTPRODUCTION_ID_LOADER R2F.2010_0_BLUE</qhldr>
+      <cmd3c>040319 0923 COMPACTCERTLOADER R2E.2010_0_BLUE</cmd3c>
+      <hole3e>2010_3e_r2f_r2e</hole3e>
+      <cmd3c>2010_f_p5g</cmd3c>
+      <activateloader/>
+    </bflash>
+    <bfs>
+      <qhldr>050404 1011 COMPACTPRODUCTION_ID_LOADER R2F.2010_0_BLUE</qhldr>
+      <cmd3c>040319 0923 COMPACTCERTLOADER R2E.2010_0_BLUE</cmd3c>
+      <hole3e>2010_3e_r2f_r2e</hole3e>
+      <cmd3c>2010_csold_R2C_setool</cmd3c>
+      <activatecsloader/>
+    </bfs>
+  </cid>
+  <cid num="29" color="red">
+    <bflash>
+      <qhldr>040319 0923 COMPACTCERTLOADER R2E.2010_0_BLUE</qhldr>
+      <hole3e>2010_3e_r2f_r2e</hole3e>
+      <cmd3c>2010_f_p5g</cmd3c>
+      <activateloader/>
+    </bflash>
+    <bfs>
+      <qhldr>040319 0923 COMPACTCERTLOADER R2E.2010_0_BLUE</qhldr>
+      <hole3e>2010_3e_r2f_r2e</hole3e>
+      <cmd3c>2010_csold_R2C_setool</cmd3c>
+      <activatecsloader/>
+    </bfs>
+  </cid>
+  <cid num="29" color="brown">
+    <bflash>
+      <qhldr>040319 0923 COMPACTCERTLOADER R2E.2010_0_BLUE</qhldr>
+      <hole3e>2010_3e_r2f_r2e</hole3e>
+      <cmd3c>2010_f_p5g</cmd3c>
+      <activateloader/>
+    </bflash>
+    <bfs>
+      <qhldr>040319 0923 COMPACTCERTLOADER R2E.2010_0_BLUE</qhldr>
+      <hole3e>2010_3e_r2f_r2e</hole3e>
+      <cmd3c>2010_csold_R2C_setool</cmd3c>
+      <activatecsloader/>
+    </bfs>
+  </cid>
+  <cid num="36" color="red">
+    <bflash>
+      <qhldr>050404 1011 COMPACTPRODUCTION_ID_LOADER R2F.2010_0_BLUE</qhldr>
+      <cmd3c>040319 0923 COMPACTCERTLOADER R2E.2010_0_BLUE</cmd3c>
+      <hole3e>2010_3e_r2f_r2e</hole3e>
+      <cmd3c>2010_f_p5g</cmd3c>
+      <activateloader/>
+    </bflash>
+    <bfs>
+      <qhldr>050404 1011 COMPACTPRODUCTION_ID_LOADER R2F.2010_0_BLUE</qhldr>
+      <cmd3c>040319 0923 COMPACTCERTLOADER R2E.2010_0_BLUE</cmd3c>
+      <hole3e>2010_3e_r2f_r2e</hole3e>
+      <cmd3c>2010_csold_R2C_setool</cmd3c>
+      <activatecsloader/>
+    </bfs>
+  </cid>
+  <cid num="36" color="brown">
+    <bflash>
+      <qhldr>050404 1011 COMPACTPRODUCTION_ID_LOADER R2F.2010_0_BLUE</qhldr>
+      <cmd3c>040319 0923 COMPACTCERTLOADER R2E.2010_0_BLUE</cmd3c>
+      <hole3e>2010_3e_r2f_r2e</hole3e>
+      <cmd3c>2010_f_p5g</cmd3c>
+      <activateloader/>
+    </bflash>
+    <bfs>
+      <qhldr>050404 1011 COMPACTPRODUCTION_ID_LOADER R2F.2010_0_BLUE</qhldr>
+      <cmd3c>040319 0923 COMPACTCERTLOADER R2E.2010_0_BLUE</cmd3c>
+      <hole3e>2010_3e_r2f_r2e</hole3e>
+      <cmd3c>2010_csold_R2C_setool</cmd3c>
+      <activatecsloader/>
+    </bfs>
+  </cid>
+</device>

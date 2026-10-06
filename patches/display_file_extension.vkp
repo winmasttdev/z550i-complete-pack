@@ -1,0 +1,6 @@
+;Z550 R6CA009
+;Отображение файлов вместе с расширением
+;Displays files with the extension
+;© IronMaster
+;(p) Absolutew800i
+45560BBA: AA1B 2A1C

@@ -1,0 +1,101 @@
+   SuperFunction v6.2 Final by Strong. 
+   Some codes    
+   from Raiderski's(supermode), Raiderski's mod on Kriomag's 21.91 
+   and Kriomag's w810 Beta.
+   
+Optimized for k750-W800 
+ 
+Normal mode:Faster shot JPEG 88%
+
+Fine Mode:Enhanced Mode(more exposure) Slower shot JPEG 91%
+
+
+COPY camdriver0.dat FILE TO IFS/SETTINGS/CAMERA
+//-------------------------------------------------------------------------------------------------------//
+
+HOW TO USE SuperFunction:
+
+SuperFunction is automatic always on.
+Works in normal and fine mode.
+Fine mode=improved Fine mode-enchanced ON.
+Normal mode= Improved Fine mode-enchanced OFF.
+There is no Normal mode.
+Macro is for auto macro shots only.
+
+Set the EV setting using joystick then
+use the Zoom keys to change the value.
+You can see the changes in the viewfinder preview.
+
+-2.0: CUSTOM WHITE BALANCE  1.0 (reset white balance) 1.1 (read white paper) 1.2 (lock white balance)
+
+-1.7: SPOT photometry  1.0 off 1.1 on 
+
+-1.3: CHANGE Scene (1.1 Portrait-1.2 Landscape-1.3 Twilight Portrait-1.4 Twilight Landscape- 1.5 Sports-1.6 Beach/Snow-1.7Document)
+
+-1.0: ZOOM 4x - video 8x
+
+-0.7: CONTRAST
+
+-0.3: PROFILE  1.1 (Low Light)  - 1.2 (Cloudy Outdor ) - 1.3 (document)
+
+ 0.0: FOCUS 1.0 is auto,1.1 infinite 1.2 manual focus half press shuter button manual focus 1.2 - 4.0 ( +/- )
+
++0.3: EXPOSURE (decrease/increase 1.1- 2.0 Normal - 3.5)
+
++0.7: SHUTTER SPEED (1.1- 4.0 increase/decrease speed viewfinder preview)
+
++1.0: SATURATION manual (1.1 default 1.2 - 4.0 decrease/increase)
+
++1.3: WHITE BALANCE BLUE (1.1 - 4.0 add blue)
+
++1.7: WHITE BALANCE YELLOW (1.1 - 4.0 add yellow)
+
++2.0: WHITE BALANCE GREEN-RED (1.1 - 2.5 add green 2.5 - 4.0 add red)
+
+All Super Functions is also available in Video mode.
+
+About Custom WB  How it works : Set EV -2.0 then Zoom key 1.1 point camera at white surface (paper, wall etc.) for better colour temperature after few seconds Lock Custom WB (Zoom 1.2) and make shot . 
+Custom White Balance lock code is Kriomag's discovery. 
+
+About manual focus for macro shots : 
+set zoom key 1.2  click half-shutter button for zoom preview (ON/OFF zoom preview by clicking half-shutter button)
+now (when zoom is on) you can adjust focus 1.2 - 4.0 (+/-) when picture is most sharp you can:
+- press shutter buttton to take picture with SPOT photometry (very useful with macro shooting)
+or
+- click half-shutter again for disable the SPOT photometry and press shutter to take picture.
+Thanks to Kriomag
+
+The driver has manualy lock/unlock exposure is usefully when takes photos indoors and some outdoors to avoid high 
+overexprosure works only in infinite mode (EV 0.0 +/- zoom 1.1)move the camera to get the desired light  
+press half shot and hold it to lock exprosure then move the camera to the object and take the photo.
+
+The driver has customize fanctions if you want open the camdriver0.dat with notepad and see the
+first codes if you wish can change the default :
+
+SHARPNESS-BRIGHTNESS-CONTRAST-EXPOSURE-SHUTTER SPEED FOR LED-NORMAL SHUTTER SPEED
+and ENCHANCED NIGHT SPEED Also JPEG COMPRESS For FINE And NORMAL mode and ZOOM.
+
+ALSO YOU CAN ADD OR REMOVE FUNCTIONS IN FUNCTIONS MENU FROM CUSTOMIZE FUNCTIONS LIST 
+to do that open camdriver0.dat with notepad scroll down and find CUSTOMIZE FUNCTIONS LIST and FUNCTIONS MENU
+(copy/paste functions to FUNCTIONS MENU as you desire)
+There is additional Functions: - Brightness - Color Green - Color Magenta -Effects(black&white,solarize,negative,sepia).
+-Sharpness (1.1 sharpness=5  1.2 sharpness=4)
+
+
+TIPS:
+For Nightsthots better use manual Speed Shot is faster than Nightmode.
+
+In good daylight outdoor shots use Normal mode.
+
+In low Light conditions and indoors shots use Enchanced mode and Led.
+
+Always use manual White Balance function for better results:
+It is important to choose the correct white balance settings otherwise there may be a colour shift in the image. For example, suppose the camera is set to use a colour temperature of sunlight to take an image of an object illuminated by indoors. The camera will expect lots of blue light and less red and will therefore mute blue and boost red accordingly. However, in an environment illuminated with incandescent lights, colour temperature is low with more red than blue. As a result the image will come out reddish or yellowish and the colours will be incorrect.
+
+Setting the camera to the correct white balance is very important and time should be taken to make sure that the chosen setting gives an accurate colour representation. Some of the more advanced digital cameras have manual settings for measuring the colour temperature of an environment's lighting and allow you to define your own white balance reference.
+
+Before taking a critical shot, you can focus/zoom at an area in the scene which is white or neutral grey and allow the camera to calibrate it's settings from that. The camera will then use this reference when taking the shot. Auto white balance is fine most of the time but for those occasions when you are not happy with the colour cast of your picture, choose one of the presets. If this still doesn't give acceptable colour rendition, try manually setting (coustom white balance) the white balance by using a white card or sheet of paper.
+
+IMPROVE IN v6.2 :  Fix some bugs.Improve color and jpg compress code.
+
+Strong!!!!

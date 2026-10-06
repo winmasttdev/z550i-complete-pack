@@ -1,0 +1,39 @@
+XS++ — versions, files, and what "3.2" actually is
+
+WHAT IS HERE
+  tools/XS++_v3.1_operationse.exe   9.27 MB  PE32 i386, PECompact2 packed, dated 2007-11-15.
+                                    Downloaded from operationse.github.io/tools.html
+                                    (link id 447300c07..., filename "XS++.exe").
+  tools/XSpp_3.1_SE-NSE/XS++.exe   9.27 MB  same build, from SE-NSE.rar. Kept as a second
+                                    copy because it is the one SE-NSE ships with its own
+                                    file-selection dialogs and matching tutorial.
+  tools/a2uploader.exe             1.78 MB  same site. A2Uploader — the A2-platform
+                                    counterpart of XS++. Not for the Z550i (A1), included
+                                    only for completeness.
+  tools/docs_tutorials/Tutorial General Usage - XS++ v3.1/   .doc walkthrough.
+
+ABOUT XS++ 3.2  (this is the version you asked for, and it is not obtainable cleanly)
+  3.2 exists only as leaked/dev builds. Every host I could find for it is gone:
+    - 4shared  http://www.4shared.com/file/80473334/971d81ab/XS_3_2.html  — dead
+    - the blog post that advertised it (se-funclub.blogspot.com, Jan 2009) still loads but
+      links out only to that dead 4shared page
+    - other hits were forum reposts pointing at long-dead fileservers
+  The 3.2 changelog, for what it is worth, claimed: DB2010 new-security models handled
+  (e.g. W810i CID 50), new EPOC phone-part flashing, unlocked CS loaders for K750/W800
+  (no more sleeping phones), CID 29 CS loaders, tweaked FSX, new splash screen.
+  For a CID 49 RED Z550i none of that matters — 3.1 flashes the phone fine, which is why
+  operationse and lpcwiki both still ship 3.1.
+
+HOW TO USE THE ONE YOU HAVE (DB2010 / CID 49)
+  1. install the Gordon's Gate drivers first (tools/GordonsGateFlashDriver_ggsetup-3.0.0.7.exe
+     or tools/GordonGateDrivers/)
+  2. battery out, battery back in, hold C, plug the DCU cable in, press Connect
+  3. for an official flash: pick the MAIN .mbn and the FS .fbn, and a customization pack
+  4. customization packs go in an own_custpack folder next to XS++.exe; that folder must
+     contain exactly one child folder named tpa. firmware/custpacks/
+     Z550_CDA102577_8_RUSSIA_extracted/ is already in that shape.
+  5. for filesystem work instead of a flash, switch to the FSX tab and "start FSX"; you get
+     an upload/download pane instead of a flash. This is how you drop acoustics, flash menus,
+     layouts and .vkp files without a full reflash. Note in the flash menu tree that
+     acoustics live at ifs/settings/acoustic and flash menus at tpa/preset/system/desktop/flash.
+  6. flash takes 5-10 minutes; pull the cable, pull the battery, refit, power on.

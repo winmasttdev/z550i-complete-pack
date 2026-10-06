@@ -1,0 +1,43 @@
+# Decoded ';' header of every .vkp in this tree (first non-comment line ends the header).
+# A Z550i-targeting patch names the phone+firmware in line 1, e.g. ';Z550 SW-R6CA009'.
+
+patches/NOT_Z550_do_not_flash/Equalizer_Patch_W810_R4EA031.vkp
+    W810 SW-R4EA031 | Equalizer settings for Normal, Bass, Voice | Generated with Equalizer Wizard 1.1 by markross
+patches/bluetooth_transfer_minimize.vkp
+    Z550 SW-R6CA009 | Возможность свернуть окно приема / передачи файлов через Bluetooth | Ability to minimize the window admission / transfer files via Bluetooth | Ver 1.3 | © Joker XT | (p) MaxxxS | ®r ZEN
+patches/change_java_folder.vkp
+    Z550 SW-R6CA009 | Замена папки /tpa/preset/system/ams -> usb/other/java | Перед применением, удалите ВСЕ игры и приложения | После включения тела НЕ надо делать мастер ресет, достаточно установить какую нибудь яву. | © Mobilefree | (p,е)HierOS
+patches/disable_java_permissions.vkp
+    Z550 SW-R6CA009 | Игнорирование "Полномочий" для явы | remove java security restrictions | (с) the_laser | (p) HierOS
+patches/display_brightness_extended_range.vkp
+    Z550 SW-R6CA009 | Расширенный диапазон регулировки яркости | Позволяет регулировать яркость от 10 до 100% | (c) IronMaster
+patches/display_file_extension.vkp
+    Z550 R6CA009 | Отображение файлов вместе с расширением | Displays files with the extension | © IronMaster | (p) Absolutew800i
+patches/fix_activity_menu_bug.vkp
+    z550 SW-R6CA009 | Убрать баг в Активити меню | Убирает квадрат на фоне на вкладке "Новые события" | © IronMaster
+patches/heap_shift.vkp
+    Z550 SW-R6CA009 prgCXC_1250583_GENERIC_ML | Сдвиг кучи! больше стабильности патчам! | heap shift! more stability for patches! | (c)den_po | (p)Absolutew800i | Большое спасибо den_po за помощь. | v.64k | info 4 patchmakers: 4C268008...4C278007 | this info is firmware version dependent
+patches/illumination_reduction.vkp
+    Z550 SW-R6CA009 | Снижение уровня регулировки подсветки на 20 процентов | При значении 50 процентов, подсветка клавиатуры отключается | Reduction in a level of adjustment of illumination on 20 percent | At value of 50 percent, illumination of the keyboard is off | (c) Mobilefree | (p) Shadow
+patches/photo_while_java_is_running.vkp
+    Z550 SW-R6CA009 | Возможность фотографировать когда ява запущена в фоне. | The opportunity to photograph when java is started in a background. | (С)SiNgle | (P)Shadow
+patches/radio_without_headset.vkp
+    Z550 SW-R6CA009 | ����� ��� ��������� | radio without headsets | (�) SiNgle | (p)NuKEr2k
+patches/remove_bluetooth_prompts.vkp
+    Z550 SW-R6CA009 | Убрать подтверждение при принятии файла через bluetooth. | remove "accept file? (yes/no)" prompt when receiving files over bluetooth. | © the_laser | (p) Shadow
+patches/remove_camera_shutter_sound.vkp
+    Z550 SW-R6CA009 | Убрать звуки камеры при съемке | © H3ct0R a.k.a. H3x | (p) Hishchnik
+patches/remove_voicerecorder_beeps.vkp
+    Z550 SW-R6CA009 | Удалить гудки при записи разговора | Remove voicerecorder beep | © SiNgle | (p) jasiek | (p) Hishchnik | v. 2.1 (fixed by FearHQ)
+patches/rename_file_extension.vkp
+    Z550 SW-R6CA009 | Переименование файлов вместе с расширением | Теперь при переименовке показывает полное имя файла включая расширение | v.2 | (c) IronMaster
+patches/simlock/Remove_SIM_lock_Z550_R6CA009_GENERIC.vkp
+    Z550 SW-R6CA009-GENERIC | Remove SIM-Lock | (c) IronMaster | (p) Remove SIM-lock patch generator v2.2
+patches/system_fs_in_file_manager.vkp
+    Z550 SW-R6CA009 | Копирование/перемещение файлов в любую папку | Добавлена 4 вкладка в Диспетчере файлов, которая включает в себя папки tpa, system, smsdata, card, usb, ifs | Добавлена возможность копирования в папку tpa и ifs | При перемещении/копировании показывает не только папки, но и файлы которые в них находятся | Убраны ограничения на копирование и передачу защищенных файлов | v. 5 fix | (c) IronMaster
+patches/time_and_data_instead_of_carrier_logo.vkp
+    Z550 SW-R6CA009 | Время и Дата вверху экрана | заместо лого оператора | Time and Date move to up | replase logo operator -> Time and Date | Ver 2.5 | ©supertrubka.org | (p)Absolutew800i
+patches/vibration_on_menu_open.vkp
+    Z550 SW-R6CA009 | Вибра при входе в меню | © GVELF aka Kaa | (p) Hishchnik
+patches/vibration_on_start_of_conversation.vkp
+    Z550 SW-R6CA009 | Вибра в момент начала разговора | при входящих не вибрит, камеру не портит | Ver.2 | (C)SiNgle | (P)Absolutew800i | (i)Сдвиг кучи

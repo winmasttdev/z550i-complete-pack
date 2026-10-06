@@ -1,0 +1,871 @@
+//07-01-24 add ISO Support; change Manual Exporsure Time to 50+
+//07-01-24 add AE Lock for Enchance Night
+//Feb 26,2007 repaired the defect of WB failure, 
+//Feb 27,2007 Fixed a bug with viewfinder became darkness after snapshot.
+//Mar 03,2007 add manual focus ,thanks zy2k.
+//Mar 27,2007 add two scence green grass and cold
+info_name=KNC 201 15;
+info_vendor=Cheng Rong;
+info_major_ver=8;
+info_minor_ver=36;
+
+
+
+
+cam_power_on_0 = 5, 0, 0, 1, 5;    	
+cam_power_on_1 = 5, 1, 35, 1, 0;	
+cam_power_on_2 = 5, 2, 35, 1, 5;   	
+cam_power_on_3 = 5, 5, 6,  1, 10;	
+cam_power_on_4 = 5, 1, 46, 1, 0;	
+cam_power_on_5 = 5, 2, 46, 1, 5;   	
+cam_power_on_6 = 5, 3, 1, 32C8, 5; 	
+cam_power_on_7 = 5, 0, 0, 0, 1F4;    	
+
+cam_power_off_0= 5, 0, 0, 1, 0;    	
+cam_power_off_1= 5, 3, 1, 1, 0;   	
+cam_power_off_2= 5, 1, 46, 1, 0;   	
+cam_power_off_3= 5, 2, 46, 0, 0;   	
+cam_power_off_4= 5, 5, 6,  0, 0;   	
+cam_power_off_5= 5, 1, 35, 1, 0;   	
+cam_power_off_6= 5, 2, 35, 0, 0;   	
+
+cam_i2c_address=1F;
+cam_vf_clock_freq=1,32C8;
+cam_ss_clock_freq=1,32C8;
+cam_vf_format=B100;
+cam_ss_format=0001;
+
+cam_ss_format_9=B100;
+cam_ss_format_30=B100;
+cam_data_offset_9=0;
+cam_data_offset_30=0;
+cam_ss_sync_30=3;
+
+cam_data_offset=2;
+cam_vf_sync=5;
+cam_ss_sync=f;
+cam_ss_sync_9=7;
+cam_ss_retries=9;
+
+
+cam_ss_jpeg_buf_size_1=3A98;	
+cam_ss_jpeg_buf_size_2=88B8;	
+cam_ss_jpeg_buf_size_3=186A0;	
+cam_ss_jpeg_buf_size_4=249f0;	
+cam_ss_jpeg_buf_size_5=61A80;	
+cam_ss_jpeg_buf_size_6=927C0;	
+cam_ss_jpeg_buf_size_7=927C0;	
+cam_ss_jpeg_buf_size_8=927C0;	
+
+
+sup_sizes=1[64,3C,0],2[A0,78,0],3[140,F0,0],
+          4[280,1E0,0],5[500,3C0,0],6[640,4B0,0],
+          7[660,440,0],8[660,4C8,0],9[280,1E0,0],
+          11[64,3C,5DC],12[A0,78,5DC],13[DC,92,5DC],
+          14[DC,A5,5DC],15[EC,B1,5DC],
+          21[80,60,3E8],22[80,60,2EE],23[B0,90,3E8],
+          24[B0,90,2EE],30[4E,90,0];
+
+sup_properties=0[0,15,9],1[0,6,0],2[0,3,1],3[0,1,0],
+		4[0,1,0],5[0,1,0],6[a,28,a],7[0,1,0],
+		8[0,4,0],9[0,4,0],a[0,2,0],b[0,4,0],
+		c[0,ff,0],d[0,1,0],e[0,2,0],f[0,1,0],
+		10[0,7,0],11[0,d,0],12[0,ff,0],13[0,15,7],
+		14[0,16,8],15[0,16,8],18[0,7,0];
+		//,19[0,1,0];
+
+CMD_END=$f $d0005;
+
+VR_NORMAL_MODE_FR=3C;
+VR_NIGHT_MODE_FR=1E;
+
+READ_AF_STATUS=05 01 00 03 03 $f $r4 4 4 4 5
+$c5 E6 $cl $s4 03 $cx; 
+
+READ_JPEG_STATUS=05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 E3 $cl $d0005  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 E3 $cl $d0005  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 E3 $cl $d0005  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 E3 $cl $d0005  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 E3 $cl $d0005  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 E3 $cl $d0005  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 E3 $cl $s4 01  
+$cx $cx $cx $cx $cx $cx $cx;
+
+WAIT_FOR_MODE_TRANSITION=05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 EA $cl $d000a  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 EA $cl $d000a  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 EA $cl $d000a  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 EA $cl $d000a  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 EA $cl $d000a  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 EA $cl $d000a  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 EA $cl $d000a  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 EA $cl $d000a  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 EA $cl $d000a  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 EA $cl $d000a  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 EA $cl $d000a  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 EA $cl $d000a  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 EA $cl $d000a  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 EA $cl $d000a  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 EA $cl $d000a  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 EA $cl $d000a  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 EA $cl $d000a  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 EA $cl $d000a  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 EA $cl $d000a  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 EA $cl $d000a  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 EA $cl $d000a  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 EA $cl $d000a  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 EA $cl $d0010  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 EA $cl $d0010  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 EA $cl $d0010  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 EA $cl $d0020  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 EA $cl $d0020  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 EA $cl $d0040  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 EA $cl $d0040  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 EA $cl $d0100
+$cx $cx $cx $cx $cx $cx $cx $cx $cx $cx
+$cx $cx $cx $cx $cx $cx $cx $cx $cx $cx
+$cx $cx $cx $cx $cx $cx $cx $cx $cx $cx;
+
+WAIT_FOR_CAPT_START=05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 E4 $cl $d0002  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 E4 $cl $d0002  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 E4 $cl $d0002  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 E4 $cl $d0002  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 E4 $cl $d000a  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 E4 $cl $d000a  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 E4 $cl $d000a  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 E4 $cl $d000a  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 E4 $cl $d000a  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 E4 $cl $d000a  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 E4 $cl $d000a  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 E4 $cl $d000a  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 E4 $cl $d000a  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 E4 $cl $d000a  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 E4 $cl $d000a  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 E4 $cl $d000a  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 E4 $cl $d000a  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 E4 $cl $d000a  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 E4 $cl $d000a  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 E4 $cl $d000a  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 E4 $cl $d000a  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 E4 $cl $d000a  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 E4 $cl $d0010  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 E4 $cl $d0010  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 E4 $cl $d0010  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 E4 $cl $d0020  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 E4 $cl $d0020  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 E4 $cl $d0040  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 E4 $cl $d0040  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 E4 $cl $d0100
+$cx $cx $cx $cx $cx $cx $cx $cx $cx $cx
+$cx $cx $cx $cx $cx $cx $cx $cx $cx $cx
+$cx $cx $cx $cx $cx $cx $cx $cx $cx $cx;
+
+WAIT_FOR_POWER_SAVE_ENTER=05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 ED $cl $d0010  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 ED $cl $d0010  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 ED $cl $d0010  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 ED $cl $d0010  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 ED $cl $d0010  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 ED $cl $d0020  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 ED $cl $d0020  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 ED $cl $d0020  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 ED $cl $d0020  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 ED $cl $d0020  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 ED $cl $d0020  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 ED $cl $d0020  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 ED $cl $d0020  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 ED $cl $d0020  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 ED $cl $d0040  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 ED $cl $d0040  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 ED $cl $d0040  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 ED $cl $d0040  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 ED $cl $d0040  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 ED $cl $d0100
+$cx $cx $cx $cx $cx $cx $cx $cx $cx $cx
+$cx $cx $cx $cx $cx $cx $cx $cx $cx $cx;
+
+WAIT_FOR_POWER_SAVE_LEAVE=05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 EC $cl $d0020  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 EC $cl $d0020  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 EC $cl $d0020  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 EC $cl $d0020  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 EC $cl $d0020  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 EC $cl $d0020  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 EC $cl $d0020  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 EC $cl $d0020  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 EC $cl $d0020  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 EC $cl $d0020  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 EC $cl $d0040  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 EC $cl $d0040  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 EC $cl $d0040  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 EC $cl $d0040  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 EC $cl $d0040  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 EC $cl $d0040  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 EC $cl $d0100  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 EC $cl $d0200  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 EC $cl $d0400  05 01 00 03 03 $f $r4 4 4 4 5 
+$c5 EC $cl $d0800
+$cx $cx $cx $cx $cx $cx $cx $cx $cx $cx
+$cx $cx $cx $cx $cx $cx $cx $cx $cx $cx;
+
+GET_SENSOR_VERSION= 	05 01 00 36 01 $f $r2 0 0
+			$c0 00
+				05 01 00 36 01 $f $r2 0 0
+				$c0 00
+					05 01 00 36 01 $f $r2 0 0
+					$>0 7	
+					$c0 01
+						$sf 01
+					$cl 
+						$sf 00
+					$cx
+				$cl
+					$>0 7	
+					$c0 01
+						$sf 01
+					$cl 
+						$sf 00
+					$cx
+				$cx
+	
+			$cl
+				$>0 7	
+				$c0 01
+					$sf 01
+				$cl 
+					$sf 00
+				$cx
+			$cx;
+
+
+//Super Mode
+
+SM_INIT_SHARPNESS=06 02 00 01 04 56 #CMD_END;
+SM_INIT_DOCUMENT_SHARPNESS=06 02 00 01 05 56 #CMD_END;
+
+SM_AUTOUPDATE_WB=$p1 01
+             $c1 00  $cl
+                $d00c8
+                $u 01
+             $cx;
+
+             
+SM_NORMAL_MODE=06 02 00 01 01 55 #CMD_END
+               #SM_INIT_SHARPNESS
+               #SM_AUTOUPDATE_WB
+               $u 00
+               $z2
+               $c2 21 $cl 
+               $c2 22 $cl
+               $c2 23 $cl
+               $c2 24 $cl
+                  $u 07
+               $cx $cx $cx $cx;
+               
+SM_DOCUMENT_MODE=06 02 00 01 00 04 #CMD_END
+               #SM_INIT_DOCUMENT_SHARPNESS
+               06 02 00 01 02 55 #CMD_END
+               06 02 00 01 02 06 #CMD_END
+               #SM_AUTOUPDATE_WB
+               $u 00
+               $z1 
+               $c2 21 $cl 
+               $c2 22 $cl
+               $c2 23 $cl
+               $c2 24 $cl
+                  $u 07
+               $cx $cx $cx $cx;
+
+
+//********************************************************************
+//  0 => Sports        1 => Normal        2 =>  Landscape  
+//  3 => Portrait      4 => Nightscene    5 =>  Nightportrait 
+//  6 => Beach/snow    7 => Document      8 =>  Manual Exposure
+//--------------------------------------------------------------------
+
+SM_SELECT_FUNCTION=
+                 $c6 00
+                     06 02 00 01 00 51 #CMD_END
+                     #SM_NORMAL_MODE $cl
+                 $c6 01
+                     06 02 00 01 01 51 #CMD_END 
+                     #SM_NORMAL_MODE
+                     $cl
+                 $c6 02
+                     06 02 00 01 06 51 #CMD_END 
+                     #SM_NORMAL_MODE $cl
+                 $c6 03
+                     06 02 00 01 03 51 #CMD_END 
+                     #SM_NORMAL_MODE $cl
+                 $c6 04
+                     06 02 00 01 04 51 #CMD_END 
+                     #SM_NORMAL_MODE $cl
+                 $c6 05
+                     06 02 00 01 05 51 #CMD_END 
+                     #SM_NORMAL_MODE $cl
+                 $c6 06
+                     06 02 00 01 02 51 #CMD_END 
+                     #SM_NORMAL_MODE $cl
+                 $c6 07
+                     06 02 00 01 00 51 #CMD_END 
+                     #SM_DOCUMENT_MODE $cl
+                 $c6 08
+                     06 02 00 01 00 51 #CMD_END
+                     #SM_NORMAL_MODE $cl
+                 $c6 09    
+                     06 02 00 01 00 51 #CMD_END
+                     #SM_NORMAL_MODE 
+                     05 02 00 20 F4 #CMD_END 
+  	             05 02 00 21 E0 #CMD_END 
+	             06 02 00 01 01 13 #CMD_END
+                     $cl
+                 $c6 0a
+                     06 02 00 01 00 51 #CMD_END
+                     #SM_NORMAL_MODE
+                     05 02 00 20 0F #CMD_END 
+  	             05 02 00 21 0F #CMD_END 
+	             06 02 00 01 01 13 #CMD_END
+                 $cx $cx $cx $cx $cx $cx $cx $cx $cx $cx $cx; 
+                 
+SM_RESTORE_ENHANCE_NIGHT=
+                 $c6 00
+                     06 02 00 01 00 51 #CMD_END $cl
+                 $c6 01
+                     06 02 00 01 01 51 #CMD_END $cl
+                 $c6 02
+                     06 02 00 01 06 51 #CMD_END $cl
+                 $c6 03
+                     06 02 00 01 03 51 #CMD_END $cl
+                 $c6 04
+                     06 02 00 01 04 51 #CMD_END $cl
+                 $c6 05
+                     06 02 00 01 05 51 #CMD_END $cl
+                 $c6 06
+                     06 02 00 01 02 51 #CMD_END $cl
+                     06 02 00 01 00 51 #CMD_END
+                 $cx $cx $cx $cx $cx $cx $cx; 
+
+
+SM_CHANGE_ZOOM_FOCUS=$s0 %0  $p1 07
+                       $c1 00
+                          $c0 0a
+                             06 02 00 01 80 61 #CMD_END                         
+                          $cl
+                            $s0 2a $-0 %0 $*0 02 $+0 80 06 02 00 01 $w0 61 #CMD_END 
+                          $cx
+                       $cl
+                          $c0 0a
+                             06 02 00 01 00 43 #CMD_END
+                             $ba 00 1 1
+                          $cl
+                            $-0 0b 06 02 00 01 $w0 43 #CMD_END 
+                            $ba 01 1 1
+                          $cx
+                       $cx;   
+                       
+SM_LOCK_AE=$z1 
+           $c1 21 $cl 
+           $c1 22 $cl
+           $c1 23 $cl
+           $c1 24 $cl
+               $p1 0d 
+               $c1 00 $p1 0e
+               $c1 00
+                   $c6 03 $cl
+                   $c6 04 $cl
+                   $c6 05 $cl
+                   $c6 08 $cl
+                       06 02 00 01 01 01 #CMD_END
+                   $cx $cx $cx $cx  
+               $cx $cx
+          $cx $cx $cx $cx;
+
+SM_UNLOCK_AE=06 02 00 01 00 01 #CMD_END;
+                       
+
+                      
+SM_ENHANCE_NIGHT_MODE=$p1 07 
+                      $c1 01
+                          $c6 08 $cl
+                          $c6 03 $cl
+                          $c6 05 $cl
+                             $p1 0d 
+                             $c1 00 $p1 0e
+                                 $c1 00
+                                     05 01 00 23 01 $f $r2 1 1 
+                                     $m0 1 $/0 28 
+                                     $c0 00 
+                                       $m0 1 $/0 03
+                                       $c0 00
+                                       $cl
+                                          $s0 40 $-0 r1 
+                                          06 02 00 01 04 51 #CMD_END
+                                          06 02 00 01 $w0 04 #CMD_END 
+                                       $cx
+                                     $cx
+                                 $cl
+                                 $cx
+                             $cl  
+                                     //For Led
+                                     05 01 00 23 01 $f $r2 1 1 
+                                     $m0 1 $/0 28 
+                                     $c0 00 
+                                       $m0 1 $/0 03
+                                       $c0 00
+                                       $cl
+                                          $s0 3d $-0 r1 
+                                          06 02 00 01 04 51 #CMD_END
+                                          06 02 00 01 $w0 04 #CMD_END 
+                                       $cx
+                                     $cx
+                             
+                             $cx
+                          $cx $cx $cx   
+                      $cx; 
+                      
+                      
+SM_ENHANCE_SHUTTER_MODE=$p1 07 
+                      $c1 01
+                          $c6 08
+                             $p0 00 $+0 1E
+                             06 02 00 01 04 51 $f
+                             06 02 00 01 $w0 04 $f
+                          $cx
+                      $cl
+                          $c6 08
+                             $p0 00 $+0 0F
+                             06 02 00 01 04 51 $f
+                             06 02 00 01 $w0 04 $f
+                          $cx
+                      $cx; 
+
+seq_ping=;
+
+seq_init=05 02 00 0B 88 #CMD_END 05 02 00 0C 13 #CMD_END	// 0x1388 5000d milliseconds
+         06 02 00 01 00 52 #CMD_END	  		
+         05 02 00 18 00 #CMD_END			
+         06 02 00 01 00 51 #CMD_END
+         06 02 00 01 04 56 #CMD_END		
+	 06 02 00 01 01 55 #CMD_END
+//         06 02 00 01 00 41 #CMD_END
+         06 02 00 01 00 04 #CMD_END
+
+	 #GET_SENSOR_VERSION;
+
+seq_set_prop_0=$s0 %0 $-0 09 06 02 00 01 $w0 06 #CMD_END;
+
+seq_get_prop_0 = $s1 08 $s0 36;      
+
+seq_set_prop_1_0=06 02 00 01 00 11 #CMD_END;
+seq_set_prop_1_1=06 02 00 01 03 11 #CMD_END;
+seq_set_prop_1_2=06 02 00 01 04 11 #CMD_END;
+seq_set_prop_1_3=06 02 00 01 05 11 #CMD_END;
+seq_set_prop_1_4=06 02 00 01 06 11 #CMD_END;
+seq_set_prop_1_5=06 02 00 01 07 11 #CMD_END;
+seq_set_prop_1_6=06 02 00 01 01 11 #CMD_END;
+
+seq_set_prop_2_0=06 02 00 01 01 21 #CMD_END;		
+seq_set_prop_2_1=06 02 00 01 02 21 #CMD_END;		
+seq_set_prop_2_2=06 02 00 01 03 21 #CMD_END;		
+seq_set_prop_2_3=06 02 00 01 00 21 #CMD_END;		
+
+seq_set_prop_3=$s0 00 $b0 %0 1 1 $b0 %0 3 1 $p1 04 
+               $c1 00 $b0 00 0 1 $b0 00 2 1 $cl
+                      $b0 01 0 1 $b0 01 2 1 $cx
+               06 02 00 01 $w0 52 #CMD_END;
+
+seq_set_prop_4=$s0 00 $b0 %0 0 1 $b0 %0 2 1 $p1 03 
+               $c1 00 $b0 00 1 1 $b0 00 3 1 $cl
+                      $b0 01 1 1 $b0 01 3 1 $cx
+               06 02 00 01 $w0 52 #CMD_END;
+
+SET_JPEG_MAX=06 02 00 0D !1 !0 #CMD_END;
+SET_JPEG_MIN=06 02 00 0F !1 !0 #CMD_END;
+SET_JPEG_AVG=06 02 00 11 !1 !0 #CMD_END;
+
+SET_JPEG_QUALITY= $p1 0e                   
+                  $c1 01   
+                    $s2 55                 
+                    #SET_JPEG_MIN(00,01)
+		  $cx
+		  $p1 07 
+		  $c1 01 
+		  $c6 08 
+		     $s2 4b
+		  $cx $cx                       
+		  07 02 00 13 $w2 $w2 $w2  #CMD_END;  
+
+seq_set_prop_5_0=$z0
+06 02 00 01 00 08 #CMD_END
+$s2 57  
+$c0 01 #SET_JPEG_MIN(00,00) #SET_JPEG_MAX(00,0F) #SET_JPEG_AVG(00,05) #SET_JPEG_QUALITY $cl
+$c0 02 #SET_JPEG_MIN(00,00) #SET_JPEG_MAX(00,19) #SET_JPEG_AVG(00,08) #SET_JPEG_QUALITY $cl
+$c0 03 #SET_JPEG_MIN(00,00) #SET_JPEG_MAX(00,28) #SET_JPEG_AVG(00,0F) #SET_JPEG_QUALITY $cl
+$c0 04 #SET_JPEG_MIN(00,00) #SET_JPEG_MAX(00,96) #SET_JPEG_AVG(00,37) #SET_JPEG_QUALITY $cl
+$c0 05 #SET_JPEG_MIN(00,00) #SET_JPEG_MAX(01,40) #SET_JPEG_AVG(00,96) #SET_JPEG_QUALITY $cl
+$c0 06 #SET_JPEG_MIN(00,00) #SET_JPEG_MAX(02,08) #SET_JPEG_AVG(01,72) #SET_JPEG_QUALITY $cl
+$c0 07 #SET_JPEG_MIN(00,00) #SET_JPEG_MAX(01,e0) #SET_JPEG_AVG(01,5e) #SET_JPEG_QUALITY $cl
+$c0 08 #SET_JPEG_MIN(00,00) #SET_JPEG_MAX(02,1c) #SET_JPEG_AVG(01,90) #SET_JPEG_QUALITY
+$cx $cx $cx $cx $cx $cx $cx $cx;
+
+seq_set_prop_5_1=$z0
+06 02 00 01 01 08 #CMD_END
+$s2 57  
+$c0 01 #SET_JPEG_MIN(00,00) #SET_JPEG_MAX(00,0F) #SET_JPEG_AVG(00,08) #SET_JPEG_QUALITY $cl
+$c0 02 #SET_JPEG_MIN(00,00) #SET_JPEG_MAX(00,19) #SET_JPEG_AVG(00,0F) #SET_JPEG_QUALITY $cl
+$c0 03 #SET_JPEG_MIN(00,00) #SET_JPEG_MAX(00,28) #SET_JPEG_AVG(00,14) #SET_JPEG_QUALITY $cl
+$c0 04 #SET_JPEG_MIN(00,00) #SET_JPEG_MAX(00,96) #SET_JPEG_AVG(00,50) #SET_JPEG_QUALITY $cl
+$c0 05 #SET_JPEG_MIN(00,00) #SET_JPEG_MAX(01,54) #SET_JPEG_AVG(01,2C) #SET_JPEG_QUALITY $cl
+$c0 06 #SET_JPEG_MIN(00,00) #SET_JPEG_MAX(02,1c) #SET_JPEG_AVG(01,cc) #SET_JPEG_QUALITY $cl
+$c0 07 #SET_JPEG_MIN(00,00) #SET_JPEG_MAX(01,f4) #SET_JPEG_AVG(01,a4) #SET_JPEG_QUALITY $cl
+$c0 08 #SET_JPEG_MIN(00,00) #SET_JPEG_MAX(02,30) #SET_JPEG_AVG(01,e0) #SET_JPEG_QUALITY
+$cx $cx $cx $cx $cx $cx $cx $cx;
+
+
+seq_set_prop_6=$p2 09 
+               $c2 00
+                 $s0 %0 $-0 0a $m6 0 
+                 #SM_SELECT_FUNCTION
+               $cl
+                 $m0 a $b0 00 1 7 
+                 $c0 00
+                     #SM_CHANGE_ZOOM_FOCUS
+                 $cl $ba 00 0 1
+                 $cx    
+               $cx;
+
+seq_set_prop_7_0=06 02 00 01 28 03 #CMD_END   
+		 05 02 00 08 3C #CMD_END      
+                 06 02 00 01 01 34 #CMD_END
+                 #WAIT_FOR_MODE_TRANSITION;
+                                  
+seq_set_prop_7_1=06 02 00 01 0a 03 #CMD_END
+                 05 02 00 08 1e #CMD_END      
+                 06 02 00 01 01 34 #CMD_END
+                 #WAIT_FOR_MODE_TRANSITION;
+
+seq_set_prop_8=06 02 00 01 %0 53 #CMD_END;
+
+seq_set_prop_9=06 02 00 01 %0 41 #CMD_END $ba 01 0 1;
+
+SM_MANUAL_FOCUS_STATUS=$m0 a $b0 00 0 1 $b0 00 2 6;
+                      
+seq_set_prop_a_0=#SM_MANUAL_FOCUS_STATUS $c0 00 06 02 00 01 02 42 #CMD_END $cx;
+seq_set_prop_a_1=#SM_MANUAL_FOCUS_STATUS $c0 00 06 02 00 01 01 42 #CMD_END $cx #SM_LOCK_AE;
+seq_set_prop_a_2=#SM_MANUAL_FOCUS_STATUS $c0 00 06 02 00 01 00 42 #CMD_END $cx #SM_UNLOCK_AE;
+
+seq_get_prop_a=#SM_MANUAL_FOCUS_STATUS 
+               $c0 00 
+                  #READ_AF_STATUS $m0 4 $c0 03 $cl $+0 04 $cx
+               $cl
+                  $s0 04   
+               $cx;
+
+seq_get_prop_b=05 01 00 25 04 $f $r5 0 0 1 2 3
+               $c3 ff 
+			      05 01 00 25 04 $f $r5 0 0 1 2 3 
+			      $c3 ff 
+				     05 01 00 25 04 $f $r5 0 0 1 2 3 
+			         $c3 ff 
+					    05 01 00 25 04 $f $r5 0 0 1 2 3 
+			            $c3 ff 
+						   05 01 00 25 04 $f $r5 0 0 1 2 3 
+			            $cx 
+				     $cx 
+				  $cx 
+			    $cx;
+
+seq_get_prop_c=05 01 00 29 03 $f $r4 0 0 1 2 
+               $c2 ff 
+			      05 01 00 29 03 $f $r4 0 0 1 2 
+			      $c2 ff 
+				     05 01 00 29 03 $f $r4 0 0 1 2 
+			         $c2 ff 
+					    05 01 00 29 03 $f $r4 0 0 1 2 
+			            $c2 ff 
+						   05 01 00 29 03 $f $r4 0 0 1 2 
+			            $cx 
+				     $cx 
+				  $cx 
+			    $cx 
+				$m 3 9
+				$m 2 8;
+
+LED_WB_SET = 06 02 00 01 00 11 #CMD_END
+             05 02 00 20 03 #CMD_END 
+  	     05 02 00 21 04 #CMD_END 
+	     06 02 00 01 01 13 #CMD_END;
+LED_WB_UNSET =05 02 00 20 00 #CMD_END 
+  	     05 02 00 21 00 #CMD_END
+             06 02 00 01 01 13 #CMD_END
+             $u 01;
+
+seq_set_prop_d=;
+
+seq_set_prop_e_0= 06 02 00 01 00 5a #CMD_END;
+seq_set_prop_e_1= 06 02 00 01 04 5a #CMD_END;
+seq_set_prop_e_2= 06 02 00 01 03 5a #CMD_END;
+
+seq_set_prop_f_0=	$cf 00	
+				06 02 00 01 00 5C #CMD_END #WAIT_FOR_POWER_SAVE_LEAVE
+                 		03 55 AA #CMD_END
+                 		07 04 20 80 00 05 0E #CMD_END
+   	              		07 04 98 12 04 00 00 #CMD_END
+			$cl
+				06 02 00 01 00 5C #CMD_END #WAIT_FOR_POWER_SAVE_LEAVE
+			$cx;
+
+seq_set_prop_f_1=06 02 00 01 81 34 #CMD_END                  
+                 #WAIT_FOR_MODE_TRANSITION
+                 06 02 00 01 00 53 #CMD_END
+                 06 02 00 01 01 5C #CMD_END #WAIT_FOR_POWER_SAVE_ENTER;
+
+seq_set_prop_10=06 02 00 01 %0 51 #CMD_END;
+
+seq_set_prop_11_0=06 02 00 01 00 05 #CMD_END;
+seq_set_prop_11_1=06 02 00 01 01 05 #CMD_END;
+seq_set_prop_11_2=06 02 00 01 04 05 #CMD_END;
+seq_set_prop_11_3=06 02 00 01 07 05 #CMD_END;
+seq_set_prop_11_4=06 02 00 01 0a 05 #CMD_END;
+seq_set_prop_11_5=06 02 00 01 0d 05 #CMD_END;
+
+seq_set_prop_11_6=06 02 00 01 02 05 #CMD_END;
+seq_set_prop_11_7=06 02 00 01 03 05 #CMD_END;
+seq_set_prop_11_8=06 02 00 01 05 05 #CMD_END;
+seq_set_prop_11_9=06 02 00 01 06 05 #CMD_END;
+seq_set_prop_11_a=06 02 00 01 08 05 #CMD_END;
+seq_set_prop_11_b=06 02 00 01 09 05 #CMD_END;
+seq_set_prop_11_c=06 02 00 01 0b 05 #CMD_END;
+seq_set_prop_11_d=06 02 00 01 0c 05 #CMD_END;
+
+seq_get_prop_12= 05 01 00 22 02 $f $r3 0 0 1; 
+
+seq_set_prop_13=06 02 00 01 %0 54 #CMD_END;
+
+seq_set_prop_14=$s0 %0 $-0 08 06 02 00 01 $w0 55 #CMD_END;
+
+seq_set_prop_15=$s0 %0 $-0 08 06 02 00 01 $w0 56 #CMD_END;
+
+seq_get_prop_16=05 01 00 2E 01 $f $r2 0 0
+                06 02 00 01 01 42 $f $d0080
+		05 01 00 2E 01 $f $r2 1 1 $d0080
+		05 01 00 2E 01 $f $r2 2 2 $d0710
+		05 01 00 2E 01 $f $r2 3 3;
+
+seq_get_prop_17=05 01 00 2E 01 $f $r2 0 0;
+		
+seq_set_prop_18=;
+
+//seq_get_prop_19=	$cf 01
+//				$s0 01
+//			$cl	$s0 00
+//			$cx; 
+
+LOCK_NIGHT_FPS=05 02 00 08 #VR_NIGHT_MODE_FR #CMD_END        
+	   06 02 00 01 #VR_NIGHT_MODE_FR 03 #CMD_END     
+	   06 02 00 01 81 34 #CMD_END	 	
+           #WAIT_FOR_MODE_TRANSITION;	
+           
+LOCK_NORMAL_FPS=05 02 00 08 #VR_NORMAL_MODE_FR #CMD_END	 
+            06 02 00 01 #VR_NORMAL_MODE_FR 03 #CMD_END	 
+            06 02 00 01 81 34 #CMD_END 		
+            #WAIT_FOR_MODE_TRANSITION;	
+            
+RELEASE_LOCK_FPS=$u07;                	
+                                   	
+VF_TRANSITION_DELAY=$d00c8;
+
+seq_ss_config_1=05 02 00 19 0D #CMD_END $u05;
+seq_ss_config_2=05 02 00 19 0B #CMD_END $u05;
+seq_ss_config_3=05 02 00 19 06 #CMD_END $u05;
+seq_ss_config_4=05 02 00 19 04 #CMD_END $u05;
+seq_ss_config_5=05 02 00 19 03 #CMD_END $u05;
+seq_ss_config_6=05 02 00 19 02 #CMD_END $u05;
+seq_ss_config_7=05 02 00 19 01 #CMD_END $u05;
+seq_ss_config_8=05 02 00 19 00 #CMD_END $u05;
+seq_ss_config_9=05 02 00 19 04;
+
+seq_vf_config_11=#VF_TRANSITION_DELAY 05 02 00 07 09 #CMD_END #RELEASE_LOCK_FPS;
+seq_vf_config_12=#VF_TRANSITION_DELAY 05 02 00 07 07 #CMD_END #RELEASE_LOCK_FPS;
+seq_vf_config_13=#VF_TRANSITION_DELAY 05 02 00 07 05 #CMD_END #RELEASE_LOCK_FPS;
+seq_vf_config_14=#VF_TRANSITION_DELAY 05 02 00 07 04 #CMD_END #RELEASE_LOCK_FPS;
+seq_vf_config_15=#VF_TRANSITION_DELAY 05 02 00 07 03 #CMD_END #RELEASE_LOCK_FPS;
+
+
+seq_vf_config_21=06 02 00 01 28 03 #CMD_END #VF_TRANSITION_DELAY 05 02 00 07 08 #CMD_END #LOCK_NORMAL_FPS;
+seq_vf_config_22=06 02 00 01 28 03 #CMD_END #VF_TRANSITION_DELAY 05 02 00 07 08 #CMD_END #LOCK_NIGHT_FPS;
+seq_vf_config_23=06 02 00 01 28 03 #CMD_END #VF_TRANSITION_DELAY 05 02 00 07 06 #CMD_END #LOCK_NORMAL_FPS;
+seq_vf_config_24=06 02 00 01 28 03 #CMD_END #VF_TRANSITION_DELAY 05 02 00 07 06 #CMD_END #LOCK_NIGHT_FPS;
+
+seq_ss_config_30=	06 02 00 01 3C 03 $f
+			05 02 00 07 06 $f 
+			06 02 00 01 01 34 $f $d0200
+			03 55 AA $f
+			07 04 2E 11 04 00 FF $f
+			08 04 04 58 00 05 98 07 $f
+			08 04 00 80 00 05 30 00 $f
+			08 04 12 80 00 05 AA 55 $f
+			08 04 14 80 00 05 9C 00 $f
+			08 04 16 80 00 05 9C 00 $f
+			$se 30 $d0100;
+
+EMPTY_EVENT_FIFO=05 01 00 03 03 $f $r4 4 4 4 5 
+          $c5 00 $cl 
+           $d0005  05 01 00 03 03 $f $r4 4 4 4 5 
+           $c5 00 $cl 
+            $d0005  05 01 00 03 03 $f $r4 4 4 4 5 
+            $c5 00 $cl 
+             $d0005  05 01 00 03 03 $f $r4 4 4 4 5 
+             $c5 00 $cl 
+              $d0005  05 01 00 03 03 $f $r4 4 4 4 5 
+              $c5 00 $cl 
+               $d0005  05 01 00 03 03 $f $r4 4 4 4 5 
+               $c5 00 $cl 
+                $d0005  05 01 00 03 03 $f $r4 4 4 4 5 
+                $c5 00 $cl 
+                 $d0005  05 01 00 03 03 $f $r4 4 4 4 5 
+                 $c5 00 $cl 
+                  $d0005  05 01 00 03 03 $f $r4 4 4 4 5 
+                  $c5 00 $cl 
+                   $d0005  05 01 00 03 03 $f $r4 4 4 4 5 
+                   $c5 00 $cl 
+                    $d0005  05 01 00 03 03 $f $r4 4 4 4 5  
+                    $c5 00 $cl 
+                     $d0005  05 01 00 03 03 $f $r4 4 4 4 5 
+                     $c5 00 $cl 
+                      $d0005  05 01 00 03 03 $f $r4 4 4 4 5 
+                      $c5 00 $cl 
+                       $d0005  05 01 00 03 03 $f $r4 4 4 4 5 $cx $cx $cx $cx $cx $cx
+                        $cx $cx $cx $cx $cx $cx $cx;
+  
+seq_vf_start=$ze; 
+
+
+seq_vf_stop=;
+
+seq_ss_start= $s7 00;  
+seq_ss_take= $c7 00    
+               $s7 01
+               #EMPTY_EVENT_FIFO $z0 $-0 re 
+               $c0 00 
+               $cl $p0 0d 
+                   $c0 01 
+                       $p0 01 
+                       $c0 00 #LED_WB_SET 
+                       $cx 
+                   $cx
+                   #SM_ENHANCE_SHUTTER_MODE
+                   06 02 00 01 01 $ze $ce 09 33 $cl 32 $cx $f 
+                   #WAIT_FOR_MODE_TRANSITION
+                   #WAIT_FOR_CAPT_START 
+               $cx 
+               $t0020
+               $z0 $c0 09 $cl #SM_ENHANCE_NIGHT_MODE $cx
+             $cx;
+
+
+READ_Q_VALUE = 05 01 00 1B 01 $f $r2 4 9
+               $c4 02 $cl
+			      05 01 00 1B 01 $f $r2 4 9
+			      $c4 02 $cl
+				     05 01 00 1B 01 $f $r2 4 9
+			         $c4 02 $cl
+					    05 01 00 1B 01 $f $r2 4 9
+			            $c4 02 $cl 
+						   05 01 00 1B 01 $f $r2 4 9
+			            $cx 
+				     $cx 
+				  $cx 
+			    $cx;
+READ_FLASH_EXIF =05 01 00 2B 01 $f $r2 8 8;	
+seq_ss_verify=$ce 09 
+                $s0 01 
+			  $cl 
+			    $ce 30 
+				   $s0 01 
+				 $cl 
+                   #READ_JPEG_STATUS 
+				   $c4 00 
+                     $s0 01  
+					 #READ_Q_VALUE
+			       $cl 
+			         $s0 00 
+			       $cx
+			   
+                 $cx 
+			  $cx #READ_FLASH_EXIF;
+
+seq_ss_stop=06 02 00 01 00 72 #CMD_END 
+            #LED_WB_UNSET 
+            06 02 00 01 00 01 #CMD_END
+            06 02 00 01 00 04 #CMD_END
+            #SM_RESTORE_ENHANCE_NIGHT;
+
+jpeg_qtable_selector_0=$s2 00 05 01 00 1B 01 $f $r2 1 0;
+jpeg_qtable_selector_1=$s2 01 05 01 00 1B 01 $f $r2 1 0;
+
+jpeg_qtable_0=10 0B 0C 0E 0C 0A 10 0E 
+              0D 0E 12 11 10 13 18 28 
+              1A 18 16 16 18 31 23 25 
+              1D 28 3A 33 3D 3C 39 33 
+              38 37 40 48 5C 4E 40 44 
+              57 45 37 38 50 6D 51 57 
+              5F 62 67 68 67 3E 4D 71
+              79 70 64 78 5C 65 67 63;
+
+jpeg_qtable_1=11 12 12 18 15 18 2F 1A 
+              1A 2F 63 42 38 42 63 63 
+              63 63 63 63 63 63 63 63 
+              63 63 63 63 63 63 63 63 
+              63 63 63 63 63 63 63 63 
+              63 63 63 63 63 63 63 63 
+              63 63 63 63 63 63 63 63 
+              63 63 63 63 63 63 63 63; 
+            
+            
+jpeg_qtable_factors=0,320000,190000,10AA00,C8000,A0000,85500,72400,64000,58E00,50000
+,48B00,42A00,3D800,39200,35500,32000,2F000,2C700,2A100,28000
+,26100,24500,22C00,21500,20000,1EC00,1DA00,1C900,1B900,1AA00
+,19C00,19000,18300,17800,16D00,16300,15900,15000,14800,14000
+,13800,13000,12900,12200,11C00,11600,11000,10A00,10500,10000
+,FA00,F500,F000,EB00,E600,E100,DC00,D700,D100,CC00
+,C700,C200,BD00,B800,B300,AE00,A800,A300,9E00,9900
+,9400,8F00,8A00,8500,8000,7A00,7500,7000,6B00,6600
+,6100,5C00,5700,5100,4C00,4700,4200,3D00,3800,3300
+,2E00,2800,2300,1E00,1900,1400,F00,A00,500,0;
+
+jpeg_header= FF D8
+             FF E0 00 10 4A 46 49 46 00 01 01 00 00 01 00 01 00 00
+             FF DB 00 84 00 $qt0  01 $qt1                             
+             FF C4 01 A2 00 00 01 05 01 01 01 01 01 01 00 00 00 00 00 00 00 
+                            00 01 02 03 04 05 06 07 08 09 0A 0B
+                         01 00 03 01 01 01 01 01 01 01 01 01 00 00 00 00 00 
+                            00 01 02 03 04 05 06 07 08 09 0A 0B
+                         10 00 02 01 03 03 02 04 03 05 05 04 04 00 00 01 7D
+                            01 02 03 00 04 11 05 12 21 31 41 06 13 51 61 07 
+                            22 71 14 32 81 91 a1 08 23 42 b1 c1 15 52 d1 f0 
+                            24 33 62 72 82 09 0a 16 17 18 19 1a 25 26 27 28 
+                            29 2a 34 35 36 37 38 39 3a 43 44 45 46 47 48 49 
+                            4a 53 54 55 56 57 58 59 5a 63 64 65 66 67 68 69 
+                            6a 73 74 75 76 77 78 79 7a 83 84 85 86 87 88 89 
+                            8a 92 93 94 95 96 97 98 99 9a a2 a3 a4 a5 a6 a7 
+                            a8 a9 aa b2 b3 b4 b5 b6 b7 b8 b9 ba c2 c3 c4 c5 
+                            c6 c7 c8 c9 ca d2 d3 d4 d5 d6 d7 d8 d9 da e1 e2
+                            e3 e4 e5 e6 e7 e8 e9 ea f1 f2 f3 f4 f5 f6 f7 f8 
+                            f9 fa
+                         11 00 02 01 02 04 04 03 04 07 05 04 04 00 01 02 77
+                            00 01 02 03 11 04 05 21 31 06 12 41 51 07 61 71 
+                            13 22 32 81 08 14 42 91 a1 b1 c1 09 23 33 52 f0 
+                            15 62 72 d1 0a 16 24 34 e1 25 f1 17 18 19 1a 26 
+                            27 28 29 2a 35 36 37 38 39 3a 43 44 45 46 47 48 
+                            49 4a 53 54 55 56 57 58 59 5a 63 64 65 66 67 68 
+                            69 6a 73 74 75 76 77 78 79 7a 82 83 84 85 86 87 
+                            88 89 8a 92 93 94 95 96 97 98 99 9a a2 a3 a4 a5 
+                            a6 a7 a8 a9 aa b2 b3 b4 b5 b6 b7 b8 b9 ba c2 c3 
+                            c4 c5 c6 c7 c8 c9 ca d2 d3 d4 d5 d6 d7 d8 d9 da
+                            e2 e3 e4 e5 e6 e7 e8 e9 ea f2 f3 f4 f5 f6 f7 f8 
+                            f9 fa             
+             FF C0 00 11 08 $h $w 03 01 21 00 02 11 01 03 11 01
+             FF DA 00 0C 03 01 00 02 11 03 11 00 3F 00;

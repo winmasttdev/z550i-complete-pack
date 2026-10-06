@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<customization xmlns:scs="http://scs.sonyericsson.net/xsd/CDAGInput.xsd">
+  <info>
+    <pcr-created>2006-04-24T18:40:16</pcr-created>
+    <created-by>Kally Tan</created-by>
+    <pcr-id>41335</pcr-id>
+    <pcr-revision>RA1</pcr-revision>
+    <cda-number>CDA102577/8</cda-number>
+    <cda-revision>R2A</cda-revision>
+    <model>Moli Generic</model>
+    <country>Sweden</country>
+    <operator>Sony Ericsson</operator>
+    <language-variant-name>RUSSIA</language-variant-name>
+    <allowed-language>en</allowed-language>
+    <allowed-language>ru</allowed-language>
+  </info>
+  <clock>
+    <date>2006-04-24</date>
+  </clock>
+  <wap>
+    <bookmark name="Sony Ericsson">http://wap.sonyericsson.com</bookmark>
+  </wap>
+  <mms>
+  </mms>
+  <mmi>
+    <profile id="0">
+    </profile>
+    <settings>
+      <home-network-specific>
+        <allow-ciphering-indication>true</allow-ciphering-indication>
+      </home-network-specific>
+    </settings>
+  </mmi>
+  <drm>
+    <licenses>
+    </licenses>
+    <settings>
+      <low-count-value>4</low-count-value>
+      <push-wait-time>25</push-wait-time>
+      <enable-imsi-lock>false</enable-imsi-lock>
+      <enable-mediaplayer-mp3>true</enable-mediaplayer-mp3>
+      <enable-mediaplayer-mp3-drm>true</enable-mediaplayer-mp3-drm>
+      <enable-mediaplayer-mp3-drmdm>true</enable-mediaplayer-mp3-drmdm>
+      <enable-ringtoneplayer-mp3>true</enable-ringtoneplayer-mp3>
+      <enable-ringtoneplayer-mp3-drm>true</enable-ringtoneplayer-mp3-drm>
+      <enable-ringtoneplayer-mp3-drmdm>true</enable-ringtoneplayer-mp3-drmdm>
+      <enable-mediaplayer-aac>true</enable-mediaplayer-aac>
+      <enable-mediaplayer-aac-drm>true</enable-mediaplayer-aac-drm>
+      <enable-mediaplayer-aac-drmdm>true</enable-mediaplayer-aac-drmdm>
+      <enable-ringtoneplayer-aac>true</enable-ringtoneplayer-aac>
+      <enable-ringtoneplayer-aac-drm>true</enable-ringtoneplayer-aac-drm>
+      <enable-ringtoneplayer-aac-drmdm>true</enable-ringtoneplayer-aac-drmdm>
+      <enable-mediaplayer-amrw>true</enable-mediaplayer-amrw>
+      <enable-mediaplayer-amrw-drm>true</enable-mediaplayer-amrw-drm>
+      <enable-mediaplayer-amrw-drmdm>true</enable-mediaplayer-amrw-drmdm>
+      <enable-ringtoneplayer-amrw>true</enable-ringtoneplayer-amrw>
+      <enable-ringtoneplayer-amrw-drm>true</enable-ringtoneplayer-amrw-drm>
+      <enable-ringtoneplayer-amrw-drmdm>true</enable-ringtoneplayer-amrw-drmdm>
+    </settings>
+  </drm>
+</customization>

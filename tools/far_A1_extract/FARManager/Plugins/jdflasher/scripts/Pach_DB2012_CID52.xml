@@ -1,0 +1,88 @@
+<? xml version = "1.0" standalone = "no">
+<device name="db2012"> <device name="db2012">
+<cid num="50" color="red"> <cid num="50" color="red">
+<oflash>
+<ldr>060712 1520 DB2012_FLASHLOADER_R1A002.2012_50_RED</ldr> <ldr> 060712 1520 DB2012_FLASHLOADER_R1A002.2012_50_RED </ ldr>
+<activateloader/>
+</oflash> </ oflash>
+<ofs>
+<ldr>060712 1520 DB2012_FLASHLOADER_R1A002.2012_50_RED</ldr> <ldr> 060712 1520 DB2012_FLASHLOADER_R1A002.2012_50_RED </ ldr>
+<activateloader/>
+<ldr>070410 1405 COMPACT_SEMC_CS_LOADER_1_R3B009.2012_50_RED</ldr> <ldr> 070410 1405 COMPACT_SEMC_CS_LOADER_1_R3B009.2012_50_RED </ ldr>
+<activatecsloader/>
+</ofs> </ OFS>
+</cid> </ Cid>
+<cid num="51" color="red"> <cid num="51" color="red">
+<oflash>
+<ldr>061205 1354 DB2012_FLASHLOADER_R2B012.2012_51_RED</ldr> <ldr> 061205 1354 DB2012_FLASHLOADER_R2B012.2012_51_RED </ ldr>
+<activateloader/>
+</oflash> </ oflash>
+<ofs>
+<ldr>061205 1354 DB2012_FLASHLOADER_R2B012.2012_51_RED</ldr> <ldr> 061205 1354 DB2012_FLASHLOADER_R2B012.2012_51_RED </ ldr>
+<activateloader/>
+<ldr>070410 1405 COMPACT_SEMC_CS_LOADER_1_R3B009.2012_51_RED</ldr> <ldr> 070410 1405 COMPACT_SEMC_CS_LOADER_1_R3B009.2012_51_RED </ ldr>
+<activatecsloader/>
+</ofs> </ OFS>
+</cid> </ Cid>
+<cid num="52" color="red"> <cid num="52" color="red">
+<oflash>
+<qhldr>
+061205 1354 DB2012_FLASHLOADER_R2B012.2012_52_RED 061205 1354 DB2012_FLASHLOADER_R2B012.2012_52_RED
+</qhldr> </ qhldr>
+<activateloader/>
+</oflash> </ oflash>
+<bflash break="2010_49" writeboot="4414_p3k.boot" ose="K510_Z530_Z550.ose"> <bflash break="2010_49" writeboot="4414_p3k.boot" ose="K510_Z530_Z550.ose">
+<qhtry>2010_header_p3l</qhtry> <qhtry> 2010_header_p3l </ qhtry>
+<run/>
+<cmd3c>2010_f_p5g</cmd3c> <cmd3c> 2010_f_p5g </ cmd3c>
+<activateloader/>
+</bflash> </ bflash>
+<ofs>
+<qhldr>
+061205 1354 DB2012_FLASHLOADER_R2B012.2012_52_RED 061205 1354 DB2012_FLASHLOADER_R2B012.2012_52_RED
+</qhldr> </ qhldr>
+<activateloader/>
+<cmd3c>
+070410 1405 COMPACT_SEMC_CS_LOADER_1_R3B009.2012_52_RED 070410 1405 COMPACT_SEMC_CS_LOADER_1_R3B009.2012_52_RED
+</cmd3c> </ cmd3c>
+<activatecsloader/>
+</ofs> </ OFS>
+<bfs break="2010_49" writeboot="4414_p3k.boot" ose="K510_Z530_Z550.ose"> <bfs break="2010_49" writeboot="4414_p3k.boot" ose="K510_Z530_Z550.ose">
+<qhtry>2010_header_p3l</qhtry> <qhtry> 2010_header_p3l </ qhtry>
+<run/>
+<cmd3c>2010_cs_R3A005</cmd3c> <cmd3c> 2010_cs_R3A005 </ cmd3c>
+<activatecsloader/>
+</bfs> </ BFS>
+</cid> </ Cid>
+<cid num="53" color="red"> <cid num="53" color="red">
+<oflash>
+<qhldr>
+071219 1257 ESG_DB2012_FLASHLOADER_R2B017_CXC1326738.DB2012_CID53_RED 071219 1257 ESG_DB2012_FLASHLOADER_R2B017_CXC1326738.DB2012_CID53_RED
+</qhldr> </ qhldr>
+<activateloader/>
+</oflash> </ oflash>
+<bflash break="2010_49" writeboot="4414_p3k.boot" ose="K510_Z530_Z550.ose"> <bflash break="2010_49" writeboot="4414_p3k.boot" ose="K510_Z530_Z550.ose">
+<qhtry>2010_header_p3l</qhtry> <qhtry> 2010_header_p3l </ qhtry>
+<run/>
+<cmd3c>2010_f_p5g</cmd3c> <cmd3c> 2010_f_p5g </ cmd3c>
+<activateloader/>
+</bflash> </ bflash>
+<ofs>
+<qhldr>
+071219 1257 ESG_DB2012_FLASHLOADER_R2B017_CXC1326738.DB2012_CID53_RED 071219 1257 ESG_DB2012_FLASHLOADER_R2B017_CXC1326738.DB2012_CID53_RED
+</qhldr> </ qhldr>
+<activateloader/>
+<cmd3c>
+071219 1257 ESG_DB2012_FLASHLOADER_R2B017_CXC1326738.DB2012_CID53_RED 071219 1257 ESG_DB2012_FLASHLOADER_R2B017_CXC1326738.DB2012_CID53_RED
+</cmd3c> </ cmd3c>
+<activatecsloader/>
+</ofs> </ OFS>
+<bfs break="2010_49" writeboot="4414_p3k.boot" ose="K510_Z530_Z550.ose"> <bfs break="2010_49" writeboot="4414_p3k.boot" ose="K510_Z530_Z550.ose">
+<qhtry>2010_header_p3l</qhtry> <qhtry> 2010_header_p3l </ qhtry>
+<run/>
+<cmd3c>2010_cs_R3A005</cmd3c> <cmd3c> 2010_cs_R3A005 </ cmd3c>
+<activatecsloader/>
+</ BFS>
+</ Cid>
+</device>
+</ producto> 

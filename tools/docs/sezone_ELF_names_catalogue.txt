@@ -1,0 +1,163 @@
+# se-zone.ru Z550i ELF names by firmware (listing pages only; downloads gated)
+r6ca009   p1  Elf EventControl + EvtEdit + EvtDesk                   https://se-zone.ru/elfs/info-100.htm
+r6ca009   p1  Elf Quick Access Menu                                  https://se-zone.ru/elfs/info-99.htm
+r6ca009   p1  Elf FontViewer                                         https://se-zone.ru/elfs/info-98.htm
+r6ca009   p1  Elf RegistryEditor_v1.5.2                              https://se-zone.ru/elfs/info-97.htm
+r6ca009   p1  Elf SMSView                                            https://se-zone.ru/elfs/info-96.htm
+r6ca009   p1  Elf GRar v1.1                                          https://se-zone.ru/elfs/info-95.htm
+r6ca009   p1  Elf Find Files v0.1fix3                                https://se-zone.ru/elfs/info-94.htm
+r6ca009   p1  Elf Layout_change                                      https://se-zone.ru/elfs/info-93.htm
+r6ca009   p1  Elf Deception Battery and Signal                       https://se-zone.ru/elfs/info-92.htm
+r6ca009   p1  Elf CallFilter v0.9                                    https://se-zone.ru/elfs/info-91.htm
+r6ca009   p1  Elf LiveBalanceLite v1.1                               https://se-zone.ru/elfs/info-90.htm
+r6ca009   p1  Elf ExtOpen v.3                                        https://se-zone.ru/elfs/info-89.htm
+r6ca009   p1  Elf ExtEditor v.1.0                                    https://se-zone.ru/elfs/info-88.htm
+r6ca009   p1  Elf VolumePlay v.2.2                                   https://se-zone.ru/elfs/info-87.htm
+r6ca009   p1  Elf FSCaller                                           https://se-zone.ru/elfs/info-86.htm
+r6ca009   p2  Elf Paint                                              https://se-zone.ru/elfs/info-85.htm
+r6ca009   p2  Elf Delete Files Browser v.1.0                         https://se-zone.ru/elfs/info-84.htm
+r6ca009   p2  Elf JavaTransfer v.5.0                                 https://se-zone.ru/elfs/info-83.htm
+r6ca009   p2  Elf AdvPlayer v.4.11                                   https://se-zone.ru/elfs/info-82.htm
+r6ca009   p2  Elf Transfer v.1.0                                     https://se-zone.ru/elfs/info-81.htm
+r6ca009   p2  Elf Scalka                                             https://se-zone.ru/elfs/info-80.htm
+r6ca009   p2  Elf Festival Show                                      https://se-zone.ru/elfs/info-79.htm
+r6ca009   p2  Elf BLEplayer v.1.2                                    https://se-zone.ru/elfs/info-78.htm
+r6ca009   p2  Elf AltTab v.2.0                                       https://se-zone.ru/elfs/info-77.htm
+r6ca009   p2  Elf Combine v.1.5.0                                    https://se-zone.ru/elfs/info-76.htm
+r6ca009   p2  Elf BcfgEdit v.3214                                    https://se-zone.ru/elfs/info-75.htm
+r6ca009   p2  Elf Lines v.3.0                                        https://se-zone.ru/elfs/info-74.htm
+r6ca009   p2  Elf Tetris v.0.5.5                                     https://se-zone.ru/elfs/info-73.htm
+r6ca009   p2  Elf SEns9x v.0.50                                      https://se-zone.ru/elfs/info-72.htm
+r6ca009   p2  Elf AdvancedPhoneStatus v.1.5                          https://se-zone.ru/elfs/info-71.htm
+r6ca009   p3  Elf CreateTXTFile v.1.1                                https://se-zone.ru/elfs/info-70.htm
+r6ca009   p3  Elf BreakCountdown v.1.0                               https://se-zone.ru/elfs/info-69.htm
+r6ca009   p3  Elf MorseCodeTranslator v.0.91                         https://se-zone.ru/elfs/info-68.htm
+r6ca009   p3  Elf TextViewer v.0.0.0.0 Test Build                    https://se-zone.ru/elfs/info-67.htm
+r6ca009   p3  Elf AlternativeBlocker v.1.0                           https://se-zone.ru/elfs/info-66.htm
+r6ca009   p3  Elf PlayerShutdown v.2.1                               https://se-zone.ru/elfs/info-65.htm
+r6ca009   p3  Elf SEns9x v.0.19                                      https://se-zone.ru/elfs/info-64.htm
+r6ca009   p3  Elf Simple Browser Manager v.1.0                       https://se-zone.ru/elfs/info-63.htm
+r6ca009   p3  Elf GameButDisabler v.2.0                              https://se-zone.ru/elfs/info-62.htm
+r6ca009   p3  Elf Calculator v1.0                                    https://se-zone.ru/elfs/info-61.htm
+r6ca009   p3  Elf Snow - Снег                                        https://se-zone.ru/elfs/info-59.htm
+r6ca009   p3  Elf Clock v1.2                                         https://se-zone.ru/elfs/info-58.htm
+r6ca009   p3  Elf MobileFar v1.0 - Файловый менеджер.                https://se-zone.ru/elfs/info-57.htm
+r6ca009   p3  Elf GPRSSessionInfo v1.0                               https://se-zone.ru/elfs/info-56.htm
+r6ca009   p3  Elf  In Life                                           https://se-zone.ru/elfs/info-55.htm
+r6ca009   p4  Elf VolumeControl                                      https://se-zone.ru/elfs/info-54.htm
+r6ca009   p4  Elf Timer of Call                                      https://se-zone.ru/elfs/info-53.htm
+r6ca009   p4  Elf Elf Installer v1.22                                https://se-zone.ru/elfs/info-52.htm
+r6ca009   p4  Elf UnRar                                              https://se-zone.ru/elfs/info-51.htm
+r6ca009   p4  Elf Silent Control v1.7.5                              https://se-zone.ru/elfs/info-50.htm
+r6ca009   p4  Elf Кукушка v0.3                                       https://se-zone.ru/elfs/info-49.htm
+r6ca009   p4  Elf Analog Clock                                       https://se-zone.ru/elfs/info-48.htm
+r6ca009   p4  Elf Weather Control v1.1                               https://se-zone.ru/elfs/info-47.htm
+r6ca009   p4  Elf Lighter2020/2010 v.2.1                             https://se-zone.ru/elfs/info-46.htm
+r6ca009   p4  Elf BcfgEdit                                           https://se-zone.ru/elfs/info-45.htm
+r6ca009   p4  Elf MiniGPS 1.19                                       https://se-zone.ru/elfs/info-44.htm
+r6ca009   p4  Elf CoverArt in Standby v3.56                          https://se-zone.ru/elfs/info-43.htm
+r6ca009   p4  Elf Standby Mode 2.8                                   https://se-zone.ru/elfs/info-42.htm
+r6ca009   p4  Elf BookManager v2.97                                  https://se-zone.ru/elfs/info-41.htm
+r6ca009   p4  Elf Video Mode v1.2                                    https://se-zone.ru/elfs/info-40.htm
+r6ca009   p5  Elf Minimize                                           https://se-zone.ru/elfs/info-39.htm
+r6ca009   p5  Elf Heap Checker v1.1                                  https://se-zone.ru/elfs/info-38.htm
+r6ca009   p5  Elf Indication of Call v 1.5.3                         https://se-zone.ru/elfs/info-37.htm
+r6ca009   p5  Elf VEF - Viewing and Edit File                        https://se-zone.ru/elfs/info-36.htm
+r6ca009   p5  Elf CoverArt in Standby v2.58                          https://se-zone.ru/elfs/info-35.htm
+r6ca009   p5  Elf Call Logger v.1.9                                  https://se-zone.ru/elfs/info-34.htm
+r6ca009   p5  Elf Time&DateFormat                                    https://se-zone.ru/elfs/info-33.htm
+r6ca009   p5  Elf UnZip                                              https://se-zone.ru/elfs/info-32.htm
+r6ca009   p5  Elf Task Menu 2.0                                      https://se-zone.ru/elfs/info-31.htm
+r6ca009   p5  Elf RegFile                                            https://se-zone.ru/elfs/info-30.htm
+r6ca009   p5  Elf Management headset v 1.3                           https://se-zone.ru/elfs/info-29.htm
+r6ca009   p5  Elf FastBar v0.3 beta / 0.3 Standby Edition            https://se-zone.ru/elfs/info-28.htm
+r6ca009   p5  Elf WallpaperChanger                                   https://se-zone.ru/elfs/info-27.htm
+r6ca009   p5  Elf Indicator of Free Memory on Disks (IFMD)           https://se-zone.ru/elfs/info-26.htm
+r6ca009   p5  Elf Desktop_v1,2 (Рабочий стол)                        https://se-zone.ru/elfs/info-25.htm
+r6ca009   p7  Elf игра SUDOKU                                        https://se-zone.ru/elfs/info-7.htm
+r6ca009   p7  Elf ScreenShooter v1.3                                 https://se-zone.ru/elfs/info-6.htm
+r6ca009   p7  Elf Lighting player v0.7                               https://se-zone.ru/elfs/info-5.htm
+r6ca009   p7  Elf Transliter - переводчик в транслит                 https://se-zone.ru/elfs/info-4.htm
+r6ca009   p7  Elf ElfManager v0.4.5                                  https://se-zone.ru/elfs/info-3.htm
+r6ca009   p7  Elf TimeTalker v2.1                                    https://se-zone.ru/elfs/info-2.htm
+r6ga004   p1  Elf EventControl + EvtEdit + EvtDesk                   https://se-zone.ru/elfs/info-100.htm
+r6ga004   p1  Elf Quick Access Menu                                  https://se-zone.ru/elfs/info-99.htm
+r6ga004   p1  Elf FontViewer                                         https://se-zone.ru/elfs/info-98.htm
+r6ga004   p1  Elf RegistryEditor_v1.5.2                              https://se-zone.ru/elfs/info-97.htm
+r6ga004   p1  Elf SMSView                                            https://se-zone.ru/elfs/info-96.htm
+r6ga004   p1  Elf GRar v1.1                                          https://se-zone.ru/elfs/info-95.htm
+r6ga004   p1  Elf Find Files v0.1fix3                                https://se-zone.ru/elfs/info-94.htm
+r6ga004   p1  Elf Layout_change                                      https://se-zone.ru/elfs/info-93.htm
+r6ga004   p1  Elf Deception Battery and Signal                       https://se-zone.ru/elfs/info-92.htm
+r6ga004   p1  Elf CallFilter v0.9                                    https://se-zone.ru/elfs/info-91.htm
+r6ga004   p1  Elf LiveBalanceLite v1.1                               https://se-zone.ru/elfs/info-90.htm
+r6ga004   p1  Elf ExtOpen v.3                                        https://se-zone.ru/elfs/info-89.htm
+r6ga004   p1  Elf ExtEditor v.1.0                                    https://se-zone.ru/elfs/info-88.htm
+r6ga004   p1  Elf VolumePlay v.2.2                                   https://se-zone.ru/elfs/info-87.htm
+r6ga004   p1  Elf FSCaller                                           https://se-zone.ru/elfs/info-86.htm
+r6ga004   p2  Elf Paint                                              https://se-zone.ru/elfs/info-85.htm
+r6ga004   p2  Elf Delete Files Browser v.1.0                         https://se-zone.ru/elfs/info-84.htm
+r6ga004   p2  Elf JavaTransfer v.5.0                                 https://se-zone.ru/elfs/info-83.htm
+r6ga004   p2  Elf AdvPlayer v.4.11                                   https://se-zone.ru/elfs/info-82.htm
+r6ga004   p2  Elf Transfer v.1.0                                     https://se-zone.ru/elfs/info-81.htm
+r6ga004   p2  Elf Scalka                                             https://se-zone.ru/elfs/info-80.htm
+r6ga004   p2  Elf Festival Show                                      https://se-zone.ru/elfs/info-79.htm
+r6ga004   p2  Elf BLEplayer v.1.2                                    https://se-zone.ru/elfs/info-78.htm
+r6ga004   p2  Elf AltTab v.2.0                                       https://se-zone.ru/elfs/info-77.htm
+r6ga004   p2  Elf Combine v.1.5.0                                    https://se-zone.ru/elfs/info-76.htm
+r6ga004   p2  Elf BcfgEdit v.3214                                    https://se-zone.ru/elfs/info-75.htm
+r6ga004   p2  Elf Lines v.3.0                                        https://se-zone.ru/elfs/info-74.htm
+r6ga004   p2  Elf Tetris v.0.5.5                                     https://se-zone.ru/elfs/info-73.htm
+r6ga004   p2  Elf SEns9x v.0.50                                      https://se-zone.ru/elfs/info-72.htm
+r6ga004   p2  Elf AdvancedPhoneStatus v.1.5                          https://se-zone.ru/elfs/info-71.htm
+r6ga004   p3  Elf CreateTXTFile v.1.1                                https://se-zone.ru/elfs/info-70.htm
+r6ga004   p3  Elf BreakCountdown v.1.0                               https://se-zone.ru/elfs/info-69.htm
+r6ga004   p3  Elf MorseCodeTranslator v.0.91                         https://se-zone.ru/elfs/info-68.htm
+r6ga004   p3  Elf TextViewer v.0.0.0.0 Test Build                    https://se-zone.ru/elfs/info-67.htm
+r6ga004   p3  Elf AlternativeBlocker v.1.0                           https://se-zone.ru/elfs/info-66.htm
+r6ga004   p3  Elf PlayerShutdown v.2.1                               https://se-zone.ru/elfs/info-65.htm
+r6ga004   p3  Elf SEns9x v.0.19                                      https://se-zone.ru/elfs/info-64.htm
+r6ga004   p3  Elf Simple Browser Manager v.1.0                       https://se-zone.ru/elfs/info-63.htm
+r6ga004   p3  Elf GameButDisabler v.2.0                              https://se-zone.ru/elfs/info-62.htm
+r6ga004   p3  Elf Calculator v1.0                                    https://se-zone.ru/elfs/info-61.htm
+r6ga004   p3  Elf Snow - Снег                                        https://se-zone.ru/elfs/info-59.htm
+r6ga004   p3  Elf Clock v1.2                                         https://se-zone.ru/elfs/info-58.htm
+r6ga004   p3  Elf MobileFar v1.0 - Файловый менеджер.                https://se-zone.ru/elfs/info-57.htm
+r6ga004   p3  Elf GPRSSessionInfo v1.0                               https://se-zone.ru/elfs/info-56.htm
+r6ga004   p3  Elf  In Life                                           https://se-zone.ru/elfs/info-55.htm
+r6ga004   p4  Elf VolumeControl                                      https://se-zone.ru/elfs/info-54.htm
+r6ga004   p4  Elf Timer of Call                                      https://se-zone.ru/elfs/info-53.htm
+r6ga004   p4  Elf Elf Installer v1.22                                https://se-zone.ru/elfs/info-52.htm
+r6ga004   p4  Elf UnRar                                              https://se-zone.ru/elfs/info-51.htm
+r6ga004   p4  Elf Silent Control v1.7.5                              https://se-zone.ru/elfs/info-50.htm
+r6ga004   p4  Elf Кукушка v0.3                                       https://se-zone.ru/elfs/info-49.htm
+r6ga004   p4  Elf Analog Clock                                       https://se-zone.ru/elfs/info-48.htm
+r6ga004   p4  Elf Weather Control v1.1                               https://se-zone.ru/elfs/info-47.htm
+r6ga004   p4  Elf Lighter2020/2010 v.2.1                             https://se-zone.ru/elfs/info-46.htm
+r6ga004   p4  Elf BcfgEdit                                           https://se-zone.ru/elfs/info-45.htm
+r6ga004   p4  Elf MiniGPS 1.19                                       https://se-zone.ru/elfs/info-44.htm
+r6ga004   p4  Elf CoverArt in Standby v3.56                          https://se-zone.ru/elfs/info-43.htm
+r6ga004   p4  Elf Standby Mode 2.8                                   https://se-zone.ru/elfs/info-42.htm
+r6ga004   p4  Elf BookManager v2.97                                  https://se-zone.ru/elfs/info-41.htm
+r6ga004   p4  Elf Video Mode v1.2                                    https://se-zone.ru/elfs/info-40.htm
+r6ga004   p5  Elf Minimize                                           https://se-zone.ru/elfs/info-39.htm
+r6ga004   p5  Elf Heap Checker v1.1                                  https://se-zone.ru/elfs/info-38.htm
+r6ga004   p5  Elf Indication of Call v 1.5.3                         https://se-zone.ru/elfs/info-37.htm
+r6ga004   p5  Elf VEF - Viewing and Edit File                        https://se-zone.ru/elfs/info-36.htm
+r6ga004   p5  Elf CoverArt in Standby v2.58                          https://se-zone.ru/elfs/info-35.htm
+r6ga004   p5  Elf Call Logger v.1.9                                  https://se-zone.ru/elfs/info-34.htm
+r6ga004   p5  Elf Time&DateFormat                                    https://se-zone.ru/elfs/info-33.htm
+r6ga004   p5  Elf UnZip                                              https://se-zone.ru/elfs/info-32.htm
+r6ga004   p5  Elf Task Menu 2.0                                      https://se-zone.ru/elfs/info-31.htm
+r6ga004   p5  Elf RegFile                                            https://se-zone.ru/elfs/info-30.htm
+r6ga004   p5  Elf Management headset v 1.3                           https://se-zone.ru/elfs/info-29.htm
+r6ga004   p5  Elf FastBar v0.3 beta / 0.3 Standby Edition            https://se-zone.ru/elfs/info-28.htm
+r6ga004   p5  Elf WallpaperChanger                                   https://se-zone.ru/elfs/info-27.htm
+r6ga004   p5  Elf Indicator of Free Memory on Disks (IFMD)           https://se-zone.ru/elfs/info-26.htm
+r6ga004   p5  Elf Desktop_v1,2 (Рабочий стол)                        https://se-zone.ru/elfs/info-25.htm
+r6ga004   p7  Elf игра SUDOKU                                        https://se-zone.ru/elfs/info-7.htm
+r6ga004   p7  Elf ScreenShooter v1.3                                 https://se-zone.ru/elfs/info-6.htm
+r6ga004   p7  Elf Lighting player v0.7                               https://se-zone.ru/elfs/info-5.htm
+r6ga004   p7  Elf Transliter - переводчик в транслит                 https://se-zone.ru/elfs/info-4.htm
+r6ga004   p7  Elf ElfManager v0.4.5                                  https://se-zone.ru/elfs/info-3.htm
+r6ga004   p7  Elf TimeTalker v2.1                                    https://se-zone.ru/elfs/info-2.htm

@@ -1,0 +1,27 @@
+# se-zone.ru Z550i ELF catalogue + ElfPack/Library endpoints (GATED 2026-10-06)
+#
+# listing pages HTTP 200. Every elf download.php returns HTTP/2 302 -> Location: /
+# (tested with curl HEAD/GET, Referer, cookie jar, full Chrome header set, and a real
+#  browser session via the automation harness — all redirect to the site root.)
+#
+# Working substitutes obtained elsewhere:
+#   ElfPack main vkp  R6CA009 -> archive.org item se-z-550i  (Z550_R6CA009.vkp, ElfPack v1.999)
+#   Library .lib.vkp  both    -> archive.perk11.info/svn/SE/Library/
+#   DYN_CONST.bin + LibraryDLL.dll -> archive.org item se-z-550i
+#   per-firmware ElfPack build sources (Target/.h, xcl/.xcl, asm/.asm) for
+#     Z550_R6CA009 and Z550_R6GA004 -> archive.perk11.info/svn/SE/ElfPack/  (see ../../elfpack/sources_perk11)
+#
+# There is NO ElfPack main .vkp for R6GA004 anywhere reachable — only the .lib.vkp
+# and the build sources. Elfs themselves: no reachable Z550i ELF binaries found.
+#
+# ElfPack / Library endpoints (gated):
+#   https://se-zone.ru/elfs/download.php?mode=elfpack&id=5      -> ElfPack (generic, A1)
+#   https://se-zone.ru/elfs/download.php?mode=lib&id=52         -> z550 lib, R6CA009
+#   https://se-zone.ru/elfs/download.php?mode=lib&id=53         -> z550 lib, R6GA004
+#
+# Listing pages, for reference when re-attempting:
+#   https://se-zone.ru/elfs/z550i-r6ca009-1.htm .. -5.htm , -7.htm   (-6.htm is a 302 to homepage)
+#   https://se-zone.ru/elfs/z550i-r6ga004-1.htm .. -5.htm , -7.htm   (-6.htm is a 302 to homepage)
+# Per-ELF page pattern: https://se-zone.ru/elfs/info-NN.htm , download at
+#   https://se-zone.ru/elfs/download.php?mode=elf&ext=zip&id=NN
+# Z550i R6CA009 pages reference info-86..info-100 ; R6GA004 pages reference info-71..info-85 and info-86..info-100.

@@ -1,0 +1,4 @@
+//by Jock
+#This will backup your alarm settings before reflash
+tpa/system/settings/alarmdata.bin
+tpa/system/settings/snoozedata.bin

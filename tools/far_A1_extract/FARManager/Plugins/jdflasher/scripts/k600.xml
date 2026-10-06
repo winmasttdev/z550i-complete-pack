@@ -1,0 +1,71 @@
+<?xml version="1.0" standalone="no" ?>
+<device name="k600">
+  <cid num="36" color="red">
+    <bflash>
+      <qhldr>050404 1011 PRODUCTION_ID_LOADER R1F.2000_0_BLUE</qhldr>
+      <cmd3c>040422 0732 CERTLOADER R3L.2000_0_BLUE</cmd3c>
+      <hole3e>2000_3e_r1f_r3l</hole3e>
+      <cmd3c>2000_f_r2b</cmd3c>
+      <activateloader/>
+    </bflash>
+    <bfs>
+      <qhldr>050404 1011 PRODUCTION_ID_LOADER R1F.2000_0_BLUE</qhldr>
+      <cmd3c>040422 0732 CERTLOADER R3L.2000_0_BLUE</cmd3c>
+      <hole3e>2000_3e_r1f_r3l</hole3e>
+      <cmd3c>2000_csold_R4B_setool</cmd3c>
+      <activatecsloader/>
+    </bfs>
+  </cid>
+  <cid num="36" color="brown">
+    <bflash>
+      <qhldr>050404 1011 PRODUCTION_ID_LOADER R1F.2000_0_BLUE</qhldr>
+      <cmd3c>040422 0732 CERTLOADER R3L.2000_0_BLUE</cmd3c>
+      <hole3e>2000_3e_r1f_r3l</hole3e>
+      <cmd3c>2000_f_r2b</cmd3c>
+      <activateloader/>
+    </bflash>
+    <bfs>
+      <qhldr>050404 1011 PRODUCTION_ID_LOADER R1F.2000_0_BLUE</qhldr>
+      <cmd3c>040422 0732 CERTLOADER R3L.2000_0_BLUE</cmd3c>
+      <hole3e>2000_3e_r1f_r3l</hole3e>
+      <cmd3c>2000_csold_R4B_setool</cmd3c>
+      <activatecsloader/>
+    </bfs>
+  </cid>
+  <cid num="37" color="red">
+    <oflash>
+      <qhldr>050810 0923 PRODUCTION_ID_LOADER R2B.2000_0_BLUE</qhldr>
+      <cmd3c>050818 1627 SEMC_FLASHLOADER P2B.2000_37_RED</cmd3c>
+      <activateloader/>
+    </oflash>
+    <ofs>
+      <qhldr>050810 0923 PRODUCTION_ID_LOADER R2B.2000_0_BLUE</qhldr>
+      <cmd3c>070418 2010 SEMC_CS_LOADER_1_P4L.2000_37_RED</cmd3c>
+      <activatecsloader/>
+    </ofs>
+  </cid>
+  <cid num="49" color="red">
+    <oflash>
+      <qhldr>050810 0923 PRODUCTION_ID_LOADER R2B.2000_0_BLUE</qhldr>
+      <cmd3c>060119 1209 SEMC_FLASHLOADER R2B.2000_49_RED</cmd3c>
+      <activateloader/>
+    </oflash>
+    <bflash break="2010_49" writeboot="2002_r2b.boot" ose="k600.ose">
+      <qhtry>2000_header_r2b</qhtry>
+      <run/>
+      <cmd3c>2000_f_r2b</cmd3c>
+      <activateloader/>
+    </bflash>
+    <ofs>
+      <qhldr>050810 0923 PRODUCTION_ID_LOADER R2B.2000_0_BLUE</qhldr>
+      <cmd3c>070418 2010 SEMC_CS_LOADER_1_P4L.2000_49_RED</cmd3c>
+      <activatecsloader/>
+    </ofs>
+    <bfs break="2010_49" writeboot="2002_r2b.boot" ose="k600.ose">
+      <qhtry>2000_header_r2b</qhtry>
+      <run/>
+      <cmd3c>2000_csold_R4B_setool</cmd3c>
+      <activatecsloader/>
+    </bfs>
+  </cid>
+</device>

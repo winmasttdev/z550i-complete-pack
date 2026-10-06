@@ -1,0 +1,14 @@
+//Made by Jock
+#This is made for W995
+tpa/preset/system/lighteffect/systemeffects/alarm.ble
+tpa/preset/system/lighteffect/systemeffects/enter_camera.ble
+tpa/preset/system/lighteffect/systemeffects/enter_music.ble
+tpa/preset/system/lighteffect/systemeffects/keypad_fade.ble
+tpa/preset/system/lighteffect/systemeffects/keypad_set.ble
+tpa/preset/system/lighteffect/systemeffects/messaging.ble
+tpa/preset/system/lighteffect/systemeffects/mt_call.ble
+tpa/preset/system/lighteffect/systemeffects/power_down.ble
+tpa/preset/system/lighteffect/systemeffects/power_up.ble
+tpa/preset/system/lighteffect/systemeffects/reminder.ble
+tpa/preset/system/lighteffect/systemeffects/service_menu_test.ble
+tpa/preset/system/lighteffect/systemeffects/system.ble
